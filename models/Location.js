@@ -13,7 +13,7 @@ Location.add({
     author: { type: Types.Relationship, ref: 'User' },
     createdAt: { type: Date, default: Date.now },
     publishedAt: Date,
-    location: { type: Types.Location, defaults: { country: 'Australia' } }
+    location: { type: Types.Location, defaults: { country: 'United States' } }
 });
 
 Location.defaultColumns = 'title, state|20%, author, publishedAt|15%'
