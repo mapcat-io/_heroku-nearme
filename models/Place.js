@@ -1,13 +1,13 @@
 var keystone = require('keystone'),
     Types = keystone.Field.Types;
 
-var Location = new keystone.List('Location', {
+var Place = new keystone.List('Place', {
     autokey: { path: 'slug', from: 'title', unique: true },
     map: { name: 'title' },
     defaultSort: '-createdAt'
 });
 
-Location.add({
+Place.add({
     title: { type: String, required: true },
     state: { type: Types.Select, options: 'draft, published, archived', default: 'draft' },
     author: { type: Types.Relationship, ref: 'User' },
@@ -16,5 +16,5 @@ Location.add({
     location: { type: Types.Location, defaults: { country: 'United States' } }
 });
 
-Location.defaultColumns = 'title, state|20%, author, publishedAt|15%'
-Location.register();
+Place.defaultColumns = 'title, state|20%, author, publishedAt|15%'
+Place.register();
