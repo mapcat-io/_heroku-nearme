@@ -14,6 +14,7 @@ Thing.add({
     createdAt: { type: Date, default: Date.now },
     publishedAt: Date,
     superThing: {type: Types.Relationship, ref: 'SuperThing' },
+    primaryImage: { type: Types.S3File },
     location: { type: Types.Location, defaults: { country: 'United States' } }
 });
 
