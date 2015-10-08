@@ -2,16 +2,16 @@
   <div class="row">
     <div class="col-md-12">
         {{#if thing.primaryImage.url}}
-          <img class="img-responsive" src="{{thing.primaryImage.url}}" alt="{{thing.title}} image" title="{{thing.title}}">
+          <img class="img-responsive img-full-width" src="{{thing.primaryImage.url}}" alt="{{thing.title}} image" title="{{thing.title}}">
         {{else}}
-          <a href="/keystone/things/{{thing._id}}" target="_blank"><img class="img-responsive" src="http://placehold.it/1024x150?text=" alt="{{this.title}} image" title="{{this.title}}"></a>
+          <a href="/keystone/things/{{thing._id}}" target="_blank"><img class="img-responsive img-full-width" src="http://placehold.it/1024x150?text=" alt="{{this.title}} image" title="{{this.title}}"></a>
         {{/if}}
         <h1>{{thing.title}}</h1>
         <p>
           {{#if thing.description}}
             {{thing.description}}
           {{else}}
-            This thing doesn't yet have a description. Be the first to <a href="keystone/things/{{thing._id}}" target="_blank">write something nice</a> about it!
+            This thing doesn't yet have a description. Be the first to <a href="/keystone/things/{{thing._id}}" target="_blank">write something nice</a> about it!
           {{/if}}
         </p>
         <p class="inline-bullet-list">

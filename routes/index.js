@@ -34,11 +34,13 @@ var routes = {
 // Setup Route Bindings
 exports = module.exports = function(app) {
 	// Views
-	app.get('/', routes.views.index);
+	app.get('/login', routes.views.index);
 	// main search page
-	app.get('/search', routes.views.search);
+	app.get('/', routes.views.search);
 	// thing page
 	app.get('/thing/:id', routes.views.thing);
+	// place page
+	app.get('/place/:id', routes.views.place);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);

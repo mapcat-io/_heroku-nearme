@@ -1,4 +1,4 @@
-// for Things functions
+// for Thing
 var keystone = require('keystone'),
     Thing = keystone.list('Thing');
 

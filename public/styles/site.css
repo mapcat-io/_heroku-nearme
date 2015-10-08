@@ -6096,3 +6096,6 @@ button.close {
     color: #9b9b9b; }
   .inline-bullet-list span:last-child:after {
     content: ''; }
+
+.img-full-width {
+  width: 100%; }

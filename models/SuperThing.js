@@ -15,5 +15,7 @@ SuperThing.add({
     publishedAt: Date
 });
 
+SuperThing.relationship({ path: 'things', ref: 'Thing', refPath: 'superThing' });
+
 SuperThing.defaultColumns = 'title, state|20%, author, publishedAt|15%'
 SuperThing.register();

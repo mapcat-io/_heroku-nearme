@@ -13,8 +13,12 @@ Place.add({
     author: { type: Types.Relationship, ref: 'User' },
     createdAt: { type: Date, default: Date.now },
     publishedAt: Date,
-    location: { type: Types.Location, defaults: { country: 'United States' } }
+    primaryImage: { type: Types.S3File },
+    location: { type: Types.Location, defaults: { country: 'United States' } },
+    places: { type: Types.Relationship, ref: 'Thing', many: true }
 });
+
+Place.relationship({ path: 'things', ref: 'Thing', refPath: 'place' });
 
 Place.defaultColumns = 'title, state|20%, author, publishedAt|15%'
 Place.register();
