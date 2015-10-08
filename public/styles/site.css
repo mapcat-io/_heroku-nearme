@@ -6088,3 +6088,11 @@ button.close {
     color: #9b9b9b; }
   .media .media-body .media-subheading span:last-child:after {
     content: ''; }
+
+.inline-bullet-list {
+  color: #9b9b9b; }
+  .inline-bullet-list span:after {
+    content: '\a0\b7';
+    color: #9b9b9b; }
+  .inline-bullet-list span:last-child:after {
+    content: ''; }

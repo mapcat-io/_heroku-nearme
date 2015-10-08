@@ -37,6 +37,8 @@ exports = module.exports = function(app) {
 	app.get('/', routes.views.index);
 	// main search page
 	app.get('/search', routes.views.search);
+	// thing page
+	app.get('/thing/:id', routes.views.thing);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
