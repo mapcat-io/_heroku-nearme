@@ -1,0 +1,31 @@
+{{#each things}}
+  <div class="media">
+    <div class="media-left">
+      {{#if this.primaryImage.url}}
+        <img class="media-object" src="{{this.primaryImage.url}}" alt="{{this.title}} image" title="{{this.title}}">
+      {{else}}
+        <a href="keystone/things/{{this._id}}" target="_blank"><img class="media-object" src="http://placehold.it/64x64?text=" alt="{{this.title}} image" title="{{this.title}}"></a>
+      {{/if}}
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">{{this.title}}</h4>
+      <p>
+        {{#if this.description}}
+          {{this.description}}
+        {{else}}
+          This thing doesn't yet have a description. Be the first to <a href="keystone/things/{{this._id}}" target="_blank">write something nice</a> about it!
+        {{/if}}
+      </p>
+      <p class="media-subheading">
+        {{#if this.superThing.title}}
+          <span>{{this.superThing.title}}</span>
+        {{/if}}
+        {{#if this.place.title}}
+          <span>@{{this.place.title}}</span>
+        {{/if}}
+      </p>
+    </div>
+  </div>
+{{else}}
+<p>None found.</p>
+{{/each}}

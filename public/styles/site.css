@@ -6072,3 +6072,19 @@ button.close {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.search-bar {
+  padding-top: 15px;
+  border-bottom: 1px solid #eee; }
+
+.media .media-object {
+  width: 64px;
+  height: 64px; }
+
+.media .media-body .media-subheading {
+  color: #9b9b9b; }
+  .media .media-body .media-subheading span:after {
+    content: '\a0\b7';
+    color: #9b9b9b; }
+  .media .media-body .media-subheading span:last-child:after {
+    content: ''; }

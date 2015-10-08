@@ -1,0 +1,20 @@
+.media {
+  .media-object {
+    width: 64px;
+    height: 64px;
+  }
+  .media-body {
+    .media-subheading {
+      color: #9b9b9b;
+
+      span:after {
+        content: '\a0\b7';
+        color: #9b9b9b;
+      }
+      span:last-child:after {
+        content: '';
+      }
+
+    }
+  }
+}
