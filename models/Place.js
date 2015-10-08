@@ -15,7 +15,6 @@ Place.add({
     publishedAt: Date,
     primaryImage: { type: Types.S3File },
     location: { type: Types.Location, defaults: { country: 'United States' } },
-    places: { type: Types.Relationship, ref: 'Thing', many: true }
 });
 
 Place.relationship({ path: 'things', ref: 'Thing', refPath: 'place' });
