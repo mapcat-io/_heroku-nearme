@@ -18,8 +18,10 @@
           {{#if thing.superThing.title}}
             <span>{{thing.superThing.title}}</span>
           {{/if}}
-          {{#if thing.place.title}}
-            <span>@{{thing.place.title}}</span>
+          {{#if thing.place}}
+            {{#each thing.place}}
+              <span><a href="place/{{this.place._id}}">@{{this.title}}</a></span>
+            {{/each}}
           {{/if}}
         </p>
     </div>

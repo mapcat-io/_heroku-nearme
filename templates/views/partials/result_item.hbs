@@ -2,9 +2,9 @@
   <div class="media">
     <div class="media-left">
       {{#if this.primaryImage.url}}
-        <img class="media-object" src="{{this.primaryImage.url}}" alt="{{this.title}} image" title="{{this.title}}">
+        <a href="thing/{{this._id}}"><img class="media-object" src="{{this.primaryImage.url}}" alt="{{this.title}} image" title="{{this.title}}"></a>
       {{else}}
-        <a href="keystone/things/{{this._id}}" target="_blank"><img class="media-object" src="http://placehold.it/64x64?text=" alt="{{this.title}} image" title="{{this.title}}"></a>
+        <a href="thing/{{this._id}}"><img class="media-object" src="http://placehold.it/64x64?text=" alt="{{this.title}} image" title="{{this.title}}"></a>
       {{/if}}
     </div>
     <div class="media-body">
@@ -20,8 +20,10 @@
         {{#if this.superThing.title}}
           <span>{{this.superThing.title}}</span>
         {{/if}}
-        {{#if this.place.title}}
-          <span><a href="place/{{this.place._id}}">@{{this.place.title}}</a></span>
+        {{#if this.place}}
+          {{#each this.place}}
+            <span><a href="place/{{this.place._id}}">@{{this.title}}</a></span>
+          {{/each}}
         {{/if}}
       </p>
     </div>

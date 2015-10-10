@@ -14,7 +14,7 @@ Thing.add({
     createdAt: { type: Date, default: Date.now },
     publishedAt: Date,
     superThing: { type: Types.Relationship, ref: 'SuperThing' },
-    place: { type: Types.Relationship, ref: 'Place' },
+    place: { type: Types.Relationship, ref: 'Place', many: true },
     description: { type: Types.Textarea },
     primaryImage: { type: Types.S3File },
     location: { type: Types.Location, defaults: { country: 'United States' } }
