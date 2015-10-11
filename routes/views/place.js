@@ -7,6 +7,6 @@ exports = module.exports = function(req, res) {
     // get a thing
     Place.model.findById(req.params.id, function (err, place) {
       if (err) throw err;
-      res.render('place', {layout: 'main', title: "The Near Me Project", place: place});
+      res.render('place', {layout: 'main', title: place.title, user: req.user, place: place});
     });
 }

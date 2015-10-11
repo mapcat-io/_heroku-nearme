@@ -7,6 +7,6 @@ exports = module.exports = function(req, res) {
     // get a thing
     Thing.model.findById(req.params.id, function (err, thing) {
       if (err) throw err;
-      res.render('thing', {layout: 'main', title: "The Near Me Project", thing: thing});
+      res.render('thing', {layout: 'main', title: thing.title, user: req.user, thing: thing});
     }).populate('superThing place');
 }

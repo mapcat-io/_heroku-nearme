@@ -4,14 +4,15 @@ var keystone = require('keystone'),
 var Thing = new keystone.List('Thing', {
     autokey: { path: 'slug', from: 'title', unique: true },
     map: { name: 'title' },
-    defaultSort: '-createdAt'
+    track: true,
+    defaultSort: '-updatedAt'
 });
 
 Thing.add({
     title: { type: String, required: true },
     state: { type: Types.Select, options: 'draft, published, archived', default: 'draft' },
-    author: { type: Types.Relationship, ref: 'User' },
-    createdAt: { type: Date, default: Date.now },
+    //author: { type: Types.Relationship, ref: 'User' },
+    //createdAt: { type: Date, default: Date.now },
     publishedAt: Date,
     superThing: { type: Types.Relationship, ref: 'SuperThing' },
     place: { type: Types.Relationship, ref: 'Place', many: true },

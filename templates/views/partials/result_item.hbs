@@ -1,33 +1,46 @@
 {{#each things}}
-  <div class="media">
-    <div class="media-left">
-      {{#if this.primaryImage.url}}
-        <a href="thing/{{this._id}}"><img class="media-object" src="{{this.primaryImage.url}}" alt="{{this.title}} image" title="{{this.title}}"></a>
-      {{else}}
-        <a href="thing/{{this._id}}"><img class="media-object" src="http://placehold.it/64x64?text=" alt="{{this.title}} image" title="{{this.title}}"></a>
-      {{/if}}
-    </div>
-    <div class="media-body">
-      <h4 class="media-heading"><a href="thing/{{this._id}}">{{this.title}}</a></h4>
-      <p>
-        {{#if this.description}}
-          {{this.description}}
-        {{else}}
-          This thing doesn't yet have a description. Be the first to <a href="keystone/things/{{this._id}}" target="_blank">write something nice</a> about it!
-        {{/if}}
-      </p>
-      <p class="media-subheading">
+  <div class="nm-card" data-id="{{this._id}}">
+    <!-- Image Header -->
+    {{#if this.primaryImage.url}}
+      <div class="img-header full" style="
+          background: url({{this.primaryImage.url}}) no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        ">
+      </div>
+    {{/if}}
+    <!-- Body -->
+    <div class="body">
+      <!-- Header -->
+      <p class="header">{{this.title}}</p>
+      <!-- Subheader -->
+      <p class="subheader">
         {{#if this.superThing.title}}
           <span>{{this.superThing.title}}</span>
         {{/if}}
         {{#if this.place}}
           {{#each this.place}}
-            <span><a href="place/{{this.place._id}}">@{{this.title}}</a></span>
+            <span><a href="place/{{this._id}}">@{{this.title}}</a></span>
           {{/each}}
         {{/if}}
       </p>
+      <!-- Description -->
+      {{#if this.description}}
+        <p class="description">
+          {{this.description}}
+        </p>
+      {{/if}}
+    </div>
+    <!-- Actions -->
+    <div class="actions">
+      <a href="thing/{{this._id}}" class="btn btn-link">Details</a>
+      {{#if ../this.user}}
+      <a href="keystone/things/{{this._id}}" class="btn btn-link" target="_blank">Update</a>
+      {{/if}}
     </div>
   </div>
 {{else}}
-<p>None found.</p>
+  <p>No results.</p>
 {{/each}}

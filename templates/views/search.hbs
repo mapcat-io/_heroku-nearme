@@ -1,13 +1,15 @@
-{{> search_bar}}
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <p>
-        <h4>Things <small>{{things.length}} {{pluralize things.length 'Result' 'Results'}}</small></h4>
-        <ul>
-          {{> result_item}}
-        </ul>
-      </p>
+<div class="dark-background full-height">
+  {{> search_bar}}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <p>
+          <h4>Things <small>{{things.length}} {{pluralize things.length 'Result' 'Results'}}</small></h4>
+          <div class="nm-cards-layout">
+            {{> result_item}}
+          </div>
+        </p>
+      </div>
     </div>
   </div>
 </div>

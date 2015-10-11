@@ -6,9 +6,10 @@ exports = module.exports = function(req, res) {
     console.log("/search");
     var q = req.query.q || '';
     // get all the things
-    Thing.model.find({title: { "$regex": q, "$options": "i" }}, function(err, things) {
+    console.log(req.user);
+    Thing.model.find().sort('-updatedAt').find({title: { "$regex": q, "$options": "i" }}, function(err, things) {
       if (err) throw err;
       // all the things
-      res.render('search', {layout: 'main', title: "The Near Me Project", things: things});
+      res.render('search', {layout: 'main', title: "Things", user: req.user , q: q, things: things});
     }).populate('superThing place');
 }
