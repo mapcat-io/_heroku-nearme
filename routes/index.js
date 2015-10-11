@@ -28,7 +28,8 @@ keystone.pre('render', middleware.flashMessages);
 
 // Import Route Controllers
 var routes = {
-	views: importRoutes('./views')
+	views: importRoutes('./views'),
+	api: importRoutes('./api')
 };
 
 // Setup Route Bindings
@@ -41,6 +42,16 @@ exports = module.exports = function(app) {
 	app.get('/thing/:id', routes.views.thing);
 	// place page
 	app.get('/place/:id', routes.views.place);
+
+	// API
+	app.get('/api', routes.api.index);
+	// things api
+	app.get('/api/v1/things', routes.api.things);
+	// thing api
+	app.get('/api/v1/thing/:id', routes.api.thing);
+	// place api
+	app.get('/api/v1/place/:id', routes.api.place);
+
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);
