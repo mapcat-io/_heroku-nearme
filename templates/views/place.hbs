@@ -20,6 +20,14 @@
   <div class="body">
     <!-- Header -->
     <p class="header">{{place.title}}</p>
+    <!-- Subheader -->
+    <p class="subheader">
+      {{#if place.category}}
+        {{#each place.category}}
+          <span>{{this.title}}</a></span>
+        {{/each}}
+      {{/if}}
+    </p>
     <!-- Actions -->
     {{#if this.user}}
       <div class="actions">
