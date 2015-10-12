@@ -11,11 +11,10 @@ var Place = new keystone.List('Place', {
 Place.add({
     title: { type: String, required: true },
     state: { type: Types.Select, options: 'draft, published, archived', default: 'draft' },
-    //author: { type: Types.Relationship, ref: 'User' },
-    //createdAt: { type: Date, default: Date.now },
     publishedAt: Date,
     primaryImage: { type: Types.S3File },
     description: { type: Types.Textarea },
+    category: { type: Types.Relationship, ref: 'YelpCategory', many: true },
     location: { type: Types.Location, defaults: { country: 'United States' } },
 });
 

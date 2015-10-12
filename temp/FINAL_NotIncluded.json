@@ -1,0 +1,220 @@
+{
+   "_id": {
+  "$oid": "561aebb458dc613bb4489839"
+  },"alias":"active"
+  ,"slug":"active"
+  ,"title":"Active Life"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb458dc613bb4489860"
+  },"alias":"arts"
+  ,"slug":"arts"
+  ,"title":"Arts & Entertainment"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb458dc613bb4489870"
+  },"alias":"auto"
+  ,"slug":"auto"
+  ,"title":"Automotive"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb458dc613bb4489896"
+  },"alias":"beautysvc"
+  ,"slug":"beautysvc"
+  ,"title":"Beauty & Spas"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb458dc613bb44898a5"
+  },"alias":"bicycles"
+  ,"slug":"bicycles"
+  ,"title":"Bicycles"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489967"
+  },"alias":"education"
+  ,"slug":"education"
+  ,"title":"Education"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489982"
+  },"alias":"eventservices"
+  ,"slug":"eventservices"
+  ,"title":"Event Planning & Services"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489993"
+  },"alias":"financialservices"
+  ,"slug":"financialservices"
+  ,"title":"Financial Services"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb44899a9"
+  },"alias":"food"
+  ,"slug":"food"
+  ,"title":"Food"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb44899ef"
+  },"alias":"health"
+  ,"slug":"health"
+  ,"title":"Health & Medical"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489a0c"
+  },"alias":"homeservices"
+  ,"slug":"homeservices"
+  ,"title":"Home Services"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489a22"
+  },"alias":"hotelstravel"
+  ,"slug":"hotelstravel"
+  ,"title":"Hotels & Travel"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489a77"
+  },"alias":"localflavor"
+  ,"slug":"localflavor"
+  ,"title":"Local Flavor"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489a7a"
+  },"alias":"localservices"
+  ,"slug":"localservices"
+  ,"title":"Local Services"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489a91"
+  },"alias":"massmedia"
+  ,"slug":"massmedia"
+  ,"title":"Mass Media"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489ad4"
+  },"alias":"nightlife"
+  ,"slug":"nightlife"
+  ,"title":"Nightlife"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489b20"
+  },"alias":"pets"
+  ,"slug":"pets"
+  ,"title":"Pets"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489b4b"
+  },"alias":"professional"
+  ,"slug":"professional"
+  ,"title":"Professional Services"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489b59"
+  },"alias":"publicservicesgovt"
+  ,"slug":"publicservicesgovt"
+  ,"title":"Public Services & Government"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489b73"
+  },"alias":"religiousorgs"
+  ,"slug":"religiousorgs"
+  ,"title":"Religious Organizations"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489b77"
+  },"alias":"restaurants"
+  ,"slug":"restaurants"
+  ,"title":"Restaurants"
+  ,"parents": [
+  {
+      "$oid": ""
+}]},
+{
+   "_id": {
+  "$oid": "561aebb558dc613bb4489bb1"
+  },"alias":"shopping"
+  ,"slug":"shopping"
+  ,"title":"Shopping"
+  ,"parents": [
+  {
+      "$oid": ""
+}]}
