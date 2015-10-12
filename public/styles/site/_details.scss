@@ -7,6 +7,32 @@
     }
   }
 
+  .map-img-wrapper {
+    height: 204px;
+    overflow: hidden;
+
+    img {
+      margin-top: -152px;
+      min-width: 100%;
+      vertical-align: middle;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+  }
+
+  .map-thumbnail {
+    position: relative;
+
+    img {
+        border: 0;
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        border-radius: 2px;
+    }
+  }
+
   .body {
     padding: 15px;
 
