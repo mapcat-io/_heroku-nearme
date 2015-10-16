@@ -20,6 +20,11 @@
         {{#if this.superThing.title}}
           <span>{{this.superThing.title}}</span>
         {{/if}}
+        {{#if this.category}}
+          {{#each this.category}}
+            <span>{{this.title}}</span>
+          {{/each}}
+        {{/if}}
         {{#if this.place}}
           {{#each this.place}}
             <span><a href="place/{{this._id}}">@{{this.title}}</a></span>

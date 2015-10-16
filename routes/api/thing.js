@@ -7,5 +7,5 @@ exports = module.exports = function(req, res) {
     Thing.model.findById(req.params.id, function (err, thing) {
       if (err) throw err;
       res.json({thing: thing});
-    }).populate('superThing place');
+    }).populate('category superThing place');
 }

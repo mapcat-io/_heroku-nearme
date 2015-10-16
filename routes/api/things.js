@@ -9,5 +9,5 @@ exports = module.exports = function(req, res) {
       if (err) throw err;
       // all the things
       res.json({things: things});
-    }).populate('superThing place');
+    }).populate('category superThing place');
 }

@@ -12,5 +12,7 @@ GoogleProduct.add({
     parents: { type: Types.Relationship, ref: 'GoogleProduct', many: true }
 });
 
+GoogleProduct.relationship({ path: 'things', ref: 'Thing', refPath: 'category' });
+
 GoogleProduct.defaultColumns = 'title, slug|20%'
 GoogleProduct.register();

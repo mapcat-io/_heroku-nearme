@@ -11,5 +11,5 @@ exports = module.exports = function(req, res) {
       if (err) throw err;
       // all the things
       res.render('search', {layout: 'main', title: "Things", user: req.user , q: q, things: things});
-    }).populate('superThing place');
+    }).populate('category superThing place');
 }
