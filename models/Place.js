@@ -12,6 +12,7 @@ Place.add({
     title: { type: String, required: true },
     state: { type: Types.Select, options: 'draft, published, archived', default: 'draft' },
     publishedAt: Date,
+    business: { type: Types.Boolean },
     primaryImage: { type: Types.S3File },
     description: { type: Types.Textarea },
     category: { type: Types.Relationship, ref: 'YelpCategory', many: true },
