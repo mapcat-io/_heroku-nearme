@@ -17,7 +17,7 @@ Thing.add({
     category: { type: Types.Relationship, ref: 'GoogleProduct', many: true },
     description: { type: Types.Textarea },
     primaryImage: { type: Types.S3File },
-    location: { type: Types.Location, defaults: { country: 'United States' } }
+    //location: { type: Types.Location, defaults: { country: 'United States' } }
 });
 
 Thing.defaultColumns = 'title, state|20%, author, publishedAt|15%'
