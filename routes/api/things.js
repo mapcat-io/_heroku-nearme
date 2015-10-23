@@ -5,7 +5,7 @@ var keystone = require('keystone'),
 exports = module.exports = function(req, res) {
     var q = req.query.q || '';
     // get all the things
-    Thing.model.find({title: { "$regex": q, "$options": "i" }}, function(err, things) {
+    Thing.model.find().sort('-updatedAt').find({title: { "$regex": q, "$options": "i" }}, function(err, things) {
       if (err) throw err;
       // all the things
       res.json({things: things});
