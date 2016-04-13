@@ -14,7 +14,8 @@
     "moment": "^2.8.1",
     "node-sass": "^3.3.3",
     "node-sass-middleware": "^0.9.6",
-    "underscore": "^1.8.0"
+    "underscore": "^1.8.0",
+    "yelp": "^1.0.1"
   },
   "devDependencies": {
     "grunt": "^0.4.4",
