@@ -7,3 +7,7 @@ This is a README file. It uses markdown. https://daringfireball.net/projects/mar
 Jen, you can put notes in here. Since this is all private, only you can I can see it.
 
 Hi, I'm Jen
+
+### Automatic Deployment to Heroku Prod
+
+App automatically deploys to Heroku production. 
