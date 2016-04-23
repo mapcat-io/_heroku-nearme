@@ -10,7 +10,7 @@ var Place = new keystone.List('Place', {
 
 Place.add({
     title: { type: String, required: true },
-    state: { type: Types.Select, options: 'draft, published, archived', default: 'draft' },
+    state: { type: Types.Select, options: 'draft, published, archived', default: 'published' },
     publishedAt: Date,
     business: { type: Types.Boolean },
     primaryImage: { type: Types.S3File },

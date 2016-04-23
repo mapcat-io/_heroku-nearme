@@ -29,15 +29,20 @@ keystone.pre('render', middleware.flashMessages);
 // Import Route Controllers
 var routes = {
 	views: importRoutes('./views'),
-	api: importRoutes('./api')
+	api: importRoutes('./api'),
+	site: importRoutes('./site')
 };
 
 // Setup Route Bindings
 exports = module.exports = function(app) {
 	// Views
+
+	// home page
+	app.get('/', routes.site.index);
+	// login page
 	app.get('/login', routes.views.index);
 	// main search page
-	app.get('/', routes.views.search);
+	app.get('/search', routes.views.search);
 	// thing page
 	app.get('/thing/:id', routes.views.thing);
 	// place page

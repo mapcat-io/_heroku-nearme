@@ -1,7 +1,7 @@
 module.exports = {
 	dist: {
     options: {
-      style: 'expanded'
+      style: 'minified'
     },
     files: {
       'public/styles/site.css': 'public/styles/site.scss',
