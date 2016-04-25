@@ -1,5 +1,28 @@
+<script>
+    function postContactToGoogle() {
+        var email = $('#Email').val();
+
+            $.ajax({
+                url: "https://docs.google.com/forms/d/1r-WaPM4Qb4C_u4RR-IM_wtUNO514Q-i9cIToXQ4Pn2E/formResponse",
+                data: { "19271924": email },
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function () {
+                        window.location.replace("ThankYou.html");
+                    },
+                    200: function () {
+                        window.location.replace("ThankYou.html");
+                    }
+                }
+            });
+    }
+</script>
+
 <!-- Hero Wrapper -->
 <div class="hero-wrapper">
+
+
   <!-- Navbar -->
   <nav class="navbar">
     <div class="container">
@@ -10,18 +33,26 @@
       </ul>
     </div>
   </nav> <!-- End -->
+
+
   <!-- Above the Fold Hero -->
   <section class="container">
     <div class="row text-center">
       <div class="twelve columns">
-        <h1>A map, of everything.</br>In San Francisco.</h1>
-        <a id="primaryCta" class="button button-primary" href="#">Interested?</a>
+        <h1>Find whatever you need,</br> wherever you are.</h1>
+          <input id="primaryCta"  class="button button-primary" type="submit" value="Interested?" /></input>
+
+          <form action="https://docs.google.com/forms/d/1r-WaPM4Qb4C_u4RR-IM_wtUNO514Q-i9cIToXQ4Pn2E/formResponse" method="post" enctype="text/plain" id="ss-form" target="_self" onsubmit="">
+            <!--<input id="email" type="text" name="mail" value="Enter your email"> -->
+            <input type="text" name="19271924" value="" class="ss-q-short" id="19271924" dir="auto" aria-label="Email address" title="">
+            <button id="ButtonSubmit" onClick="postContactToGoogle()" type="button">Send</button>
+          </form>
       </div>
     </div>
   </section> <!-- End -->
 </div> <!-- End -->
 <!-- First Row -->
-<section>
+<!-- <section>
   <div class="container lg">
    <div class="row text-center">
      <div class="four columns">
