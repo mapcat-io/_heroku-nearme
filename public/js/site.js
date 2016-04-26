@@ -4,7 +4,6 @@
 //   console.log( $( this ).text() );
 // });
 
-
 function postContactToGoogle() {
     console.log("button is clicked");
     var email = $('#Email').val();
