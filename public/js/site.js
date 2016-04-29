@@ -1,25 +1,90 @@
-// homepage main button click handler
+// Helper functions placed inside variable
+var helper = {
 
-// $( "#primaryCta" ).on( "click", function() {
-//   console.log( $( this ).text() );
-// });
+    isEmail: function(email) {
+      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return regex.test(email);
+    },
 
-function postContactToGoogle() {
-    console.log("button is clicked");
-    var email = $('#Email').val();
+    animateMainButton: function(el) {
+      $(el).removeClass('button-primary').toggleClass('button-success').prop("disabled",true);
+      $(el).html('<span class="inner" style="opacity: 0; padding-left: 21.5px; padding-right: 21.5px"><i class="fa fa-check" aria-hidden="true"></i> Yay!</span>');
+      $(el).find('.inner').animate({
+        'opacity': 1,
+        'padding-left': '0px',
+        'padding-right': '0px',
+      }, 400);
+    },
 
+    displayInvalidEmail: function(el) {
+      $(el).append('<p class="error-msg" style="color: #ffffff; margin: 0px;">That does not appear to be a valid email address.</p>');
+    },
+
+    serverError: function (el) {
+      $(el).append('<p>This is embarrasing. Our servers malfunctioned.</p>');
+    }
+
+
+};
+
+// on page click handlers
+
+
+// function isEmail(email) {
+//   var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+//   return regex.test(email);
+// }
+//
+// function animateMainButton(el) {
+//   $(el).removeClass('button-primary').toggleClass('button-success').prop("disabled",true);
+//   $(el).html('<span class="inner" style="opacity: 0; padding-left: 21.5px; padding-right: 21.5px"><i class="fa fa-check" aria-hidden="true"></i> Yay!</span>');
+//   $(el).find('.inner').animate({
+//     'opacity': 1,
+//     'padding-left': '0px',
+//     'padding-right': '0px',
+//   }, 400);
+// };
+//
+// function displayInvalidEmail(el) {
+//   $(el).append('<p class="error-msg" style="color: #ffffff; margin: 0px;">That does not appear to be a valid email address.</p>');
+// };
+//
+// // server response codes not yet working
+// function serverError(el) {
+//   $(el).append('<p>This is embarrasing. Our servers malfunctioned.</p>');
+// };
+
+$('#ButtonSubmit').on('click', function(e) {
+      // remove any error messages
+      $('.error-msg').remove();
+      // initialize variables
+      var form = $('#ss-form');
+      var el = $(this);
+      var email = $('#Email').val();
+      // check if valid email address
+      if (helper.isEmail(email)) {
+        // post the form to Google Form
         $.ajax({
             url: "https://docs.google.com/forms/d/1r-WaPM4Qb4C_u4RR-IM_wtUNO514Q-i9cIToXQ4Pn2E/formResponse",
-            data: { "entry_1599441494": email },
+            data: { "entry.1599441494": email },
             type: "POST",
             dataType: "xml",
             statusCode: {
+                // success animate button
                 0: function () {
-                    window.location.replace("/");
+                    helper.animateMainButton(el);
                 },
+                // success animate button
                 200: function () {
-                    window.location.replace("/");
-                }
+                    helper.animateMainButton(el);
+                },
             }
         });
-}
+      }
+      // if not a valid email address, display message
+      else {
+        console.log("invalid email");
+        helper.displayInvalidEmail(form);
+      }
+
+});

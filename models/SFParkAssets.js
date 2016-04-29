@@ -8,11 +8,17 @@ var SFParkAssets = new keystone.List('SFParkAssets', {
 });
 
 SFParkAssets.add({
-    title: { type: String, required: true },
-    parents: { type: Types.Relationship, ref: 'SFParkAssets', many: true }
+  title: { type: String, required: true },
+  state: { type: Types.Select, options: 'draft, published, archived', default: 'published' },
+  publishedAt: Date,
+  quantity: {type: Types.Number, required: false },
+  description: { type: Types.Textarea },
+  location: { type: Types.Location, defaults: { country: 'United States' } },
+  primaryImage: { type: Types.S3File },
+  //location: { type: Types.Location, defaults: { country: 'United States' } }
 });
 
-SFParkAssets.relationship({ path: 'things', ref: 'Thing', refPath: 'category' });
+SFParkAssets.relationship({ path: 'things', ref: 'Thing', refPath: 'place' });
 
 SFParkAssets.defaultColumns = 'title, slug|20%'
 SFParkAssets.register();
