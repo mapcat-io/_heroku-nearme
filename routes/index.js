@@ -47,6 +47,8 @@ exports = module.exports = function(app) {
 	app.get('/thing/:id', routes.views.thing);
 	// place page
 	app.get('/place/:id', routes.views.place);
+	// merchants page
+	app.get('/merchants', routes.site.merchants);
 
 	// API
 	app.get('/api', routes.api.index);

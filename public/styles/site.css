@@ -631,11 +631,6 @@ input[type="button"].button-primary:focus {
   background-color: #1EAEDB;
   border-color: #1EAEDB; }
 
-.button.button-success {
-    color: #FFF;
-    background-color: #9CCC65;
-  }
-
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
@@ -704,8 +699,6 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal; }
-
-
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -914,12 +907,3 @@ a {
   list-style: none;
   margin-top: 11px;
   margin-bottom: 0px; }
-
-
-.button-success {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-  }
