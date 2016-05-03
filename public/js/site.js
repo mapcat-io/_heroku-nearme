@@ -22,6 +22,25 @@ var helper = {
 
     serverError: function (el) {
       $(el).append('<p>This is embarrasing. Our servers malfunctioned.</p>');
+    },
+
+    postToGoogleForm: function (success, url, data) {
+      $.ajax({
+          url: url,
+          data: data,
+          type: "POST",
+          dataType: "xml",
+          statusCode: {
+              // success animate button
+              0: function () {
+                  success;
+              },
+              // success animate button
+              200: function () {
+                  success;
+              },
+          }
+      });
     }
 
 
@@ -54,6 +73,37 @@ var helper = {
 //   $(el).append('<p>This is embarrasing. Our servers malfunctioned.</p>');
 // };
 
+$('#ButtonSubmit2').on('click', function(e) {
+      // remove any error messages
+      $('.error-msg').remove();
+      // initialize variables
+      var form = $('#ss-form2');
+      var el = $(this);
+      // ADD IN ALL FORM INPUTS HERE
+      var name = $('#Name').val();
+      var business = $('#Business').val();
+      var email = $('#Email2').val();
+      var phone = $('#Phone').val();
+      // check if valid email address
+      if (helper.isEmail(email)) {
+        // post the form to Google Form
+        helper.postToGoogleForm(helper.animateMainButton(el), 'https://docs.google.com/forms/d/1QppcYnRw-kxBej97b95ufqQLDFqo7uG4OBmEcMToBKA/formResponse', {
+          // ADD IN FORM INPUT IDS HERE
+          "entry.45640366": name,
+          "entry.489371257": business,
+          "entry.609193203": email,
+          "entry.1326969094": phone,
+
+        });
+      }
+      // if not a valid email address, display message
+      else {
+        console.log("invalid email");
+        helper.displayInvalidEmail(form);
+      }
+
+});
+
 $('#ButtonSubmit').on('click', function(e) {
       // remove any error messages
       $('.error-msg').remove();
@@ -64,21 +114,8 @@ $('#ButtonSubmit').on('click', function(e) {
       // check if valid email address
       if (helper.isEmail(email)) {
         // post the form to Google Form
-        $.ajax({
-            url: "https://docs.google.com/forms/d/1r-WaPM4Qb4C_u4RR-IM_wtUNO514Q-i9cIToXQ4Pn2E/formResponse",
-            data: { "entry.1599441494": email },
-            type: "POST",
-            dataType: "xml",
-            statusCode: {
-                // success animate button
-                0: function () {
-                    helper.animateMainButton(el);
-                },
-                // success animate button
-                200: function () {
-                    helper.animateMainButton(el);
-                },
-            }
+        helper.postToGoogleForm(helper.animateMainButton(el), 'https://docs.google.com/forms/d/1r-WaPM4Qb4C_u4RR-IM_wtUNO514Q-i9cIToXQ4Pn2E/formResponse', {
+          "entry.1599441494": email
         });
       }
       // if not a valid email address, display message
