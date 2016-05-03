@@ -844,9 +844,14 @@ a {
 
 .hero-wrapper {
   min-height: 650px;
-  background: linear-gradient(0deg, #e95591 0%, #f67e8b 100%);
   height: 100%;
   margin-bottom: 0px; }
+
+.hero-wrapper.home {
+  background: linear-gradient(0deg, #e95591 0%, #f67e8b 100%); }
+
+.hero-wrapper.merchants {
+  background: #10627B; }
 
 .hero-wrapper .button {
   margin-top: 20px; }
@@ -881,8 +886,7 @@ a {
   color: #33C3F0; }
 
 .navbar {
-  height: 50px;
-  margin-bottom: 140px; }
+  height: 50px; }
 
 .navbar ul > li {
   float: left;
@@ -907,3 +911,6 @@ a {
   list-style: none;
   margin-top: 11px;
   margin-bottom: 0px; }
+
+#index-hero {
+  margin-top: 140px; }

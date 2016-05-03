@@ -10,6 +10,6 @@ exports = module.exports = function(req, res) {
 	locals.section = 'merchants';
 
 	// Render the view
-	view.render('merchants');
+	view.render('merchants', {layout: 'site', title: "Merchants"});
 
 };
