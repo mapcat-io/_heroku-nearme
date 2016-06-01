@@ -29,7 +29,8 @@ keystone.pre('render', middleware.flashMessages);
 // Import Route Controllers
 var routes = {
 	views: importRoutes('./views'),
-	api: importRoutes('./api'),
+	api_prototype: importRoutes('./api/prototype'),
+	api_v1: importRoutes('./api/v1'),
 	site: importRoutes('./site')
 };
 
@@ -50,14 +51,14 @@ exports = module.exports = function(app) {
 	// merchants page
 	app.get('/merchants', routes.site.merchants);
 
-	// API
-	app.get('/api', routes.api.index);
-	// things api
-	app.get('/api/v1/things', routes.api.things);
-	// thing api
-	app.get('/api/v1/thing/:id', routes.api.thing);
-	// place api
-	app.get('/api/v1/place/:id', routes.api.place);
+	// API PROTOTYPE
+	app.get('/api/prototype/things', routes.api_prototype.things);
+
+	// API V1
+	app.get('/api/v1', routes.api_v1.index);
+	app.get('/api/v1/things', routes.api_v1.things);
+	app.get('/api/v1/thing/:id', routes.api_v1.thing);
+	app.get('/api/v1/place/:id', routes.api_v1.place);
 
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
