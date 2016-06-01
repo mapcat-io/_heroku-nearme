@@ -1,8 +1,8 @@
 var mongojs = require('mongojs');
 
 // define db connection credentials
-var db = mongojs('mongodb://rustyritz:J3nnifer@ds029224.mlab.com:29224/heroku_qtmrm6hs', ['test']);
-var things = db.collection('test')
+var db = mongojs('mongodb://rustyritz:J3nnifer@ds029224.mlab.com:29224/heroku_qtmrm6hs', ['things_prototype']);
+var things = db.collection('things_prototype');
 
 // populates csv dump into 'test' collection
 exports = module.exports = function(req, res) {
