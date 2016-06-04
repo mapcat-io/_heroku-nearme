@@ -19,7 +19,5 @@ Place.add({
     location: { type: Types.Location, defaults: { country: 'United States' } },
 });
 
-Place.relationship({ path: 'things', ref: 'Thing', refPath: 'place' });
-
 Place.defaultColumns = 'title, state|20%, author, publishedAt|15%'
 Place.register();

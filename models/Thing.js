@@ -1,4 +1,5 @@
 var keystone = require('keystone'),
+    Place = keystone.list('Place');
     Types = keystone.Field.Types;
 
 var Thing = new keystone.List('Thing', {
@@ -18,7 +19,10 @@ Thing.add({
     description: { type: Types.Textarea },
     primaryImage: { type: Types.S3File },
     //location: { type: Types.Location, defaults: { country: 'United States' } }
+    //barcode
 });
+
+Place.relationship({ path: 'things', ref: 'Thing', refPath: 'place' });
 
 Thing.defaultColumns = 'title, state|20%, author, publishedAt|15%'
 Thing.register();
