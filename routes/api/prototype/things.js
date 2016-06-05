@@ -8,7 +8,9 @@ var things = db.collection('things_prototype');
 // populates csv dump into 'test' collection
 exports = module.exports = function(req, res) {
 
-  var q = req.query.q || '';
+  var q = req.query.q || '',
+      t = req.query.t || '';
+      
   var result = [];
 
   things.find({ $or: [
@@ -23,8 +25,12 @@ exports = module.exports = function(req, res) {
     ]}, function (err, docs) {
       // docs is an array of all the documents in the collection
 
-      result = utilities.spewEngine(docs);
-
+      if (t === 'raw') {
+          result = docs;
+      }
+      else {
+        result = utilities.spewEngine(docs);
+      }
       if (err) throw err;
       // all the things
       res.json({things: result});
