@@ -2,7 +2,7 @@ var mongojs = require('mongojs'),
     utilities = require('../../utilities');
 
 // define db connection credentials
-var db = mongojs('mongodb://rustyritz:J3nnifer@ds029224.mlab.com:29224/heroku_qtmrm6hs', ['things_prototype']);
+var db = mongojs(process.env.MONGOLAB_URI, ['things_prototype']);
 var things = db.collection('things_prototype');
 
 // populates csv dump into 'test' collection
@@ -32,10 +32,9 @@ exports = module.exports = function(req, res) {
         result = utilities.spewEngine(docs);
       }
       if (err) throw err;
-      //console.log(req);
+      console.log(process.env.MONGOLAB_URI);
       // send event to universal-analytics
       utilities.analyticsEventAPI('api', 'search', req, 1);
-
       //visitor.event("api", "search", fullUrl(req), 1).send();
       // all the things
       res.json({things: result});
