@@ -17,6 +17,7 @@
     "node-sass": "^3.3.3",
     "node-sass-middleware": "^0.9.6",
     "underscore": "^1.8.0",
+    "universal-analytics": "^0.3.11",
     "yelp": "^1.0.1"
   },
   "devDependencies": {

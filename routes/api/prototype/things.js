@@ -10,7 +10,7 @@ exports = module.exports = function(req, res) {
 
   var q = req.query.q || '',
       t = req.query.t || '';
-      
+
   var result = [];
 
   things.find({ $or: [
@@ -32,6 +32,11 @@ exports = module.exports = function(req, res) {
         result = utilities.spewEngine(docs);
       }
       if (err) throw err;
+      //console.log(req);
+      // send event to universal-analytics
+      utilities.analyticsEventAPI('api', 'search', req, 1);
+
+      //visitor.event("api", "search", fullUrl(req), 1).send();
       // all the things
       res.json({things: result});
   });

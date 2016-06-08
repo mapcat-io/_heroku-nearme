@@ -1,10 +1,28 @@
 var _ = require('lodash');
 
 module.exports = {
-
+  // return fulll url from express req object
+  fullUrl: function(req) {
+    url = require('url');
+    return url.format({
+      protocol: req.protocol,
+      host: req.get('host'),
+      pathname: req.originalUrl
+    });
+  },
+  // general server side universal analytics
+  analyticsEventAPI: function(category, action, label, value) {
+    var ua = require('universal-analytics');
+    // universal-analytics ID
+    var visitor = ua('UA-77560033-1'); // Mapcat GA ID
+    // if label is req object, parse into full url
+    if (label.socket) {
+      label = this.fullUrl(label);
+    };
+    visitor.event(category, action, label, 1).send();
+  },
+  // process things results for ios app
   spewEngine: function(docs) {
-    //console.log(docs);
-
     var arr = [];
     var unique = {};
     docs.forEach(function(doc, i) {
