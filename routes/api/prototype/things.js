@@ -11,8 +11,10 @@ exports = module.exports = function(req, res) {
   var q = req.query.q || '',
       t = req.query.t || '';
 
-  var result = [];
-
+  var result = [],
+      // regex to match word starts with q
+      q = '\\b' + q + '\\S*';
+  console.log(q);
   things.find({ $or: [
       {"Thing": { "$regex": q, "$options": "i" }},
       {"Common name": { "$regex": q, "$options": "i" }},
@@ -32,7 +34,6 @@ exports = module.exports = function(req, res) {
         result = utilities.spewEngine(docs);
       }
       if (err) throw err;
-      console.log(process.env.MONGOLAB_URI);
       // send event to universal-analytics
       utilities.analyticsEventAPI('api', 'search', req, 1);
       //visitor.event("api", "search", fullUrl(req), 1).send();
