@@ -14,7 +14,7 @@ exports = module.exports = function(req, res) {
   var result = [],
       // regex to match word starts with q
       q = '\\b' + q + '\\S*';
-  console.log(q);
+
   things.find({ $or: [
       {"Thing": { "$regex": q, "$options": "i" }},
       {"Common name": { "$regex": q, "$options": "i" }},
@@ -26,7 +26,6 @@ exports = module.exports = function(req, res) {
       {"Place name": { "$regex": q, "$options": "i" }}
     ]}, function (err, docs) {
       // docs is an array of all the documents in the collection
-
       if (t === 'raw') {
           result = docs;
       }
