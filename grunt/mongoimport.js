@@ -137,6 +137,15 @@ module.exports = {
         drop : false,
         headerLine: true
       },
+      {
+        name : 'things_prototype',
+        type : 'csv',
+        file : 'public/data/Parks-Assets.csv',
+        upsert : true,
+        upsertFields: ['Mapcat ID'],
+        drop : false,
+        headerLine: true
+      },
     ]
   }
 };
