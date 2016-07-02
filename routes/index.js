@@ -31,7 +31,8 @@ var routes = {
 	views: importRoutes('./views'),
 	api_prototype: importRoutes('./api/prototype'),
 	api_v1: importRoutes('./api/v1'),
-	site: importRoutes('./site')
+	site: importRoutes('./site'),
+	login: importRoutes('./login')
 };
 
 // Setup Route Bindings
@@ -50,6 +51,10 @@ exports = module.exports = function(app) {
 	app.get('/place/:id', routes.views.place);
 	// merchants page
 	app.get('/merchants', routes.site.merchants);
+
+	//= views requiring login
+	app.get('/login/home', middleware.requireUser, routes.login.index);
+	app.get('/login/place/:id', middleware.requireUser, routes.login.place_item_list);
 
 	// API PROTOTYPE
 	app.get('/api/prototype/things', routes.api_prototype.things);

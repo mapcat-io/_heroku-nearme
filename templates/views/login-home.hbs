@@ -1,0 +1,10 @@
+{{> login/navbar}}
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      {{#each places}}
+        {{> list/place data=this}}
+      {{/ each}}
+    </div>
+  </div>
+</div>
