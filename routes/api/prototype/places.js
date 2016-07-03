@@ -15,7 +15,7 @@ exports = module.exports = function(req, res) {
 		}
     else {
       console.log(error);
-      res.json({error});
+      res.json(error);
     }
   });
 
