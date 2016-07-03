@@ -8,7 +8,11 @@
           <strong>Success!</strong> The items have been submitted. Thanks for sharing your knowledge with the world.
         </div>
 			{{else}}
-        <form>
+        <form id="top-things-form" action="/api/prototype/top-things" method="post">
+          <input type="hidden" class="form-control" name="place" value="{{ name }}">
+          <input type="hidden" class="form-control" name="placeId" value="{{ id }}">
+          <input type="hidden" class="form-control" name="lat" value="{{ lat }}">
+          <input type="hidden" class="form-control" name="long" value="{{ long }}">
           {{#each topthings}}
             {{> list/top-thing-input data=this}}
           {{/ each}}

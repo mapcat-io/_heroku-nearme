@@ -55,11 +55,12 @@ exports = module.exports = function(app) {
 	//= views requiring login
 	app.get('/login/home', routes.login.index);
 	app.get('/login/places', routes.login.places);
-	app.get('/login/place/:id', routes.login.place_item_list);
+	app.all('/login/place/:id', routes.login.place_item_list);
 
 	// API PROTOTYPE
 	app.get('/api/prototype/things', routes.api_prototype.things);
 	app.get('/api/prototype/places', routes.api_prototype.places);
+	app.all('/api/prototype/top-things', keystone.middleware.api, routes.api_prototype.top_things);
 
 	// API V1
 	app.get('/api/v1', routes.api_v1.index);

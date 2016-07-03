@@ -34,8 +34,11 @@
       };
       // places url
       $( ".row.place" ).on( "click", function() {
-        var id = $(this).attr('data-id');
-        location.href= '/login/place/' + id;
+        var id = $(this).attr('data-id'),
+            name = $(this).attr('data-name'),
+            lat = $(this).attr('data-lat'),
+            long = $(this).attr('data-long');
+        location.href= '/login/place/' + id + '/?name=' + encodeURIComponent(name) + '&id=' + id + '&lat=' + lat + '&long=' + long;
       });
       // get user location
       var lat = '', long = '';
@@ -47,7 +50,8 @@
         console.log(location.coords.accuracy);
         lat = location.coords.latitude;
         long = location.coords.longitude;
-        $('#see-places-btn').show();
+        $('#see-places-btn').html('See Places Around Me');
+        $('#see-places-btn').removeClass('disabled');
       });
       $( "#see-places-btn" ).on( "click", function() {
         location.href= '/login/places/?lat=' + lat + '&long=' + long;
@@ -58,7 +62,33 @@
         $( this ).find('input').toggleCheck();
         $( this ).toggleClass('select-background');
       });
+    </script>
+    <script type="text/javascript">
+      // top-things post form-group
+      $( "#top-things-form" ).submit(function( event ) {
+        // Stop form from submitting normally
+        event.preventDefault();
+        // Get some values from elements on the page:
+        var $form = $( this ),
+            term = $form.find( "input[name='s']" ).val(),
+            url = '/api/prototype/top-things';
+            form_data = $form.serialize();
 
+        $.ajax({
+          type: "POST",
+          url: url,
+          data: form_data,
+          success: function() {console.log('success');},
+          dataType: 'json'
+        });
+
+        // // Send the data using post
+        // var posting = $.post( url, form_data );
+        // // Put the results in a div
+        // posting.done(function( data ) {
+        //   console.log( form_data );
+        // });
+      });
     </script>
   </body>
 </html>

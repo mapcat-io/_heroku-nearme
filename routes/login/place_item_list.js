@@ -7,6 +7,13 @@ exports = module.exports = function(req, res) {
 	var view = new keystone.View(req, res);
 	var locals = res.locals;
 
+  var lat = req.query.lat || '',
+      long = req.query.long || '',
+      id = req.query.id || '',
+      name = req.query.name || '';
+
+  console.log(name);
+
 	// locals.section is used to set the currently selected
 	// item in the header navigation.
 	locals.section = 'login-home';
@@ -29,13 +36,12 @@ exports = module.exports = function(req, res) {
     var q = TopThingsPrototype.model.find({}).sort({ 'name' : 1})
     q.exec(function (err, result) {
       locals.topthings = result;
-      console.log(result);
       next(err);
     });
 
   });
 
 	// Render the view
-	view.render('login-place-item-list', {layout: 'login', title: 'Top Things', backUrl: backUrl});
+	view.render('login-place-item-list', {layout: 'login', id: id, lat: lat, long: long, name: name, title: 'Top Things', backUrl: backUrl});
 
 };
