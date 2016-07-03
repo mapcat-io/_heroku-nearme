@@ -3,11 +3,20 @@
   {{> row-back url=backUrl}}
   <div class="row">
     <div class="col-xs-12">
-      <form>
-        {{#each topthings}}
-          {{> list/top-thing-input data=this}}
-        {{/ each}}
-      </form>
+      {{#if contactSubmitted}}
+        <div class="alert alert-info" role="alert">
+          <strong>Success!</strong> The items have been submitted. Thanks for sharing your knowledge with the world.
+        </div>
+			{{else}}
+        <form>
+          {{#each topthings}}
+            {{> list/top-thing-input data=this}}
+          {{/ each}}
+          <div class="form-actions" style="padding: 16px; position: fixed; bottom: 0px; left: 0px; right: 0px; background-color: #fff; border-top: 1px solid #ddd;">
+					  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+				  </div>
+        </form>
+      {{/if}}
     </div>
   </div>
 </div>
