@@ -29,6 +29,7 @@ exports = module.exports = function(req, res) {
     var q = TopThingsPrototype.model.find({}).sort({ 'name' : 1})
     q.exec(function (err, result) {
       locals.topthings = result;
+      console.log(result);
       next(err);
     });
 

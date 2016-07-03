@@ -9,7 +9,8 @@ var TopThingsPrototype = new keystone.List('TopThingsPrototype', {
 
 TopThingsPrototype.add({
   name: { type: String, required: true },
-  state: { type: Types.Select, options: 'draft, published, archived', default: 'published' }
+  state: { type: Types.Select, options: 'draft, published, archived', default: 'published' },
+  category: { type: String },
 });
 
 TopThingsPrototype.defaultColumns = 'name, state|20%'
