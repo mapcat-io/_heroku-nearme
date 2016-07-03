@@ -32,7 +32,7 @@ var routes = {
 	api_prototype: importRoutes('./api/prototype'),
 	api_v1: importRoutes('./api/v1'),
 	site: importRoutes('./site'),
-	login: importRoutes('./login')
+	login: importRoutes('./tool')
 };
 
 // Setup Route Bindings
@@ -52,10 +52,10 @@ exports = module.exports = function(app) {
 	// merchants page
 	app.get('/merchants', routes.site.merchants);
 
-	//= views requiring login
-	app.get('/login/home', routes.login.index);
-	app.get('/login/places', routes.login.places);
-	app.all('/login/place/:id', routes.login.place_item_list);
+	//= Mapcat Tool
+	app.get('/tool/home', routes.login.index);
+	app.get('/tool/places', routes.login.places);
+	app.all('/tool/place/:id', routes.login.place_item_list);
 
 	// API PROTOTYPE
 	app.get('/api/prototype/things', routes.api_prototype.things);

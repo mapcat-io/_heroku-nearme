@@ -1,5 +1,5 @@
 {{> login/navbar}}
-<div class="container">
+<div class="container" style="margin-bottom: 66px;">
   {{> row-back url=backUrl}}
   <div class="row">
     <div class="col-xs-12">
@@ -11,6 +11,8 @@
           {{#each topthings}}
             {{> list/top-thing-input data=this}}
           {{/ each}}
+          {{> list/add-thing}}
+          {{> list/add-thing-input}}
           <div class="form-actions" style="padding: 16px; position: fixed; bottom: 0px; left: 0px; right: 0px; background-color: #fff; border-top: 1px solid #ddd;">
 					  <button type="submit" class="btn btn-primary btn-block">Submit</button>
 				  </div>
