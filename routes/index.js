@@ -53,9 +53,9 @@ exports = module.exports = function(app) {
 	app.get('/merchants', routes.site.merchants);
 
 	//= views requiring login
-	app.get('/login/home', middleware.requireUser, routes.login.index);
-	app.get('/login/places', middleware.requireUser, routes.login.places);
-	app.get('/login/place/:id', middleware.requireUser, routes.login.place_item_list);
+	app.get('/login/home', routes.login.index);
+	app.get('/login/places', routes.login.places);
+	app.get('/login/place/:id', routes.login.place_item_list);
 
 	// API PROTOTYPE
 	app.get('/api/prototype/things', routes.api_prototype.things);
