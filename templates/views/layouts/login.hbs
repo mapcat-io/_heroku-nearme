@@ -69,6 +69,7 @@
         // Stop form from submitting normally
         event.preventDefault();
         // Get some values from elements on the page:
+        $( "#top-things-form button" ).addClass('disabled');
         var $form = $( this ),
             term = $form.find( "input[name='s']" ).val(),
             url = '/api/prototype/top-things';
@@ -78,7 +79,10 @@
           type: "POST",
           url: url,
           data: form_data,
-          success: function() {console.log('success');},
+          success: function() {
+            console.log('success');
+            $( "#top-things-form button" ).addClass('btn-success').html('Success!')
+          },
           dataType: 'json'
         });
 

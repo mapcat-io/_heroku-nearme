@@ -9,17 +9,31 @@ exports = module.exports = function(req, res) {
   var items = data['itemName'];
   console.log(data);
 
-  for (var i = 0; i < items.length; i++) {
-    // create item data
+  if (Array.isArray(items)) {
+    for (var i = 0; i < items.length; i++) {
+      // create item data
+      var obj = {};
+      obj["place"] = data.place;
+      obj["placeId"] = data.placeId;
+      obj["lat"] = data.lat;
+      obj["long"] = data.long;
+      obj["name"] = items[i];
+      // instantiate item
+      var item = new ItemsPrototype.model(obj);
+      // // save item
+      item.save(function(err) {
+          if (err) return res.apiError('error', err);
+      });
+    }
+  }
+  else {
     var obj = {};
     obj["place"] = data.place;
     obj["placeId"] = data.placeId;
     obj["lat"] = data.lat;
     obj["long"] = data.long;
-    obj["name"] = items[i];
-    // instantiate item
+    obj['name'] = data['itemName'];
     var item = new ItemsPrototype.model(obj);
-    // // save item
     item.save(function(err) {
         if (err) return res.apiError('error', err);
     });
