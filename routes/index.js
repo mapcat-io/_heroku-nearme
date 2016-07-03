@@ -54,10 +54,12 @@ exports = module.exports = function(app) {
 
 	//= views requiring login
 	app.get('/login/home', middleware.requireUser, routes.login.index);
+	app.get('/login/places', middleware.requireUser, routes.login.places);
 	app.get('/login/place/:id', middleware.requireUser, routes.login.place_item_list);
 
 	// API PROTOTYPE
 	app.get('/api/prototype/things', routes.api_prototype.things);
+	app.get('/api/prototype/places', routes.api_prototype.places);
 
 	// API V1
 	app.get('/api/v1', routes.api_v1.index);

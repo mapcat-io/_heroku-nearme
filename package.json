@@ -8,6 +8,7 @@
     "cloudinary": "^1.0.12",
     "dotenv": "^1.1.0",
     "express-handlebars": "^1.1.0",
+    "foursquarevenues": "^2.0.0",
     "gulp-sass": "^2.0.4",
     "handlebars": "^2.0.0",
     "keystone": "^0.3.11",

@@ -28,13 +28,37 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript">
+      // toggle checkboxes in top-things url
       $.fn.toggleCheck=function(){
         $(this).prop('checked', !($(this).is(':checked')));
       };
+      // places url
+      $( ".row.place" ).on( "click", function() {
+        var id = $(this).attr('data-id');
+        location.href= '/login/place/' + id;
+      });
+      // get user location
+      var lat = '', long = '';
+      navigator.geolocation.getCurrentPosition(function(location) {
+        lat = location.coords.latitude;
+        long = location.coords.longitude
+        console.log(location.coords.latitude);
+        console.log(location.coords.longitude);
+        console.log(location.coords.accuracy);
+        lat = location.coords.latitude;
+        long = location.coords.longitude;
+        $('#see-places-btn').show();
+      });
+      $( "#see-places-btn" ).on( "click", function() {
+        location.href= '/login/places/?lat=' + lat + '&long=' + long;
+        event.preventDefault();
+      });
+      // select background in top-things url
       $( ".topthing-checkbox-row" ).on( "click", function() {
         $( this ).find('input').toggleCheck();
         $( this ).toggleClass('select-background');
       });
+
     </script>
   </body>
 </html>

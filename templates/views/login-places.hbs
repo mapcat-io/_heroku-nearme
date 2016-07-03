@@ -1,0 +1,11 @@
+{{> login/navbar}}
+<div class="container">
+  {{> row-back url="/login/home"}}
+  <div class="row">
+    <div class="col-xs-12">
+      {{#each places}}
+        {{> list/place data=this}}
+      {{/ each}}
+    </div>
+  </div>
+</div>
