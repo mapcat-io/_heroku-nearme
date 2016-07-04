@@ -12,14 +12,22 @@ module.exports = {
     // rootdir: 'public/data/',
     collections : [
       {
-        name : 'topthingsprototypes',
+        name : 'itemsprototypes',
         type : 'csv',
-        file : 'public/data/dir/top-food-items.csv',
+        file : 'public/data/things-collected.csv',
         upsert : true,
-        upsertFields: ['mapcat_id'],
         drop : false,
         headerLine: true
       },
+      // {
+      //   name : 'topthingsprototypes',
+      //   type : 'csv',
+      //   file : 'public/data/dir/top-food-items.csv',
+      //   upsert : true,
+      //   upsertFields: ['mapcat_id'],
+      //   drop : false,
+      //   headerLine: true
+      // },
       // {
       //   name : 'placeprototypes',
       //   type : 'csv',
