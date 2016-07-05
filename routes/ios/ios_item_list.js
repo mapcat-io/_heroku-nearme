@@ -18,9 +18,6 @@ exports = module.exports = function(req, res) {
 	// item in the header navigation.
 	locals.section = 'login-home';
 
-  var backUrl = req.headers.referer || '/login/home';
-  console.log(backUrl);
-
   // Load Place
   view.on('init', function (next) {
     var q = PlacePrototype.model.findById(req.params.id)
@@ -42,6 +39,6 @@ exports = module.exports = function(req, res) {
   });
 
 	// Render the view
-	view.render('login-place-item-list', {layout: 'login', id: id, lat: lat, long: long, name: name, title: 'Top Things', backUrl: backUrl});
+	view.render('ios-item-list', {layout: 'ios', id: id, lat: lat, long: long, name: name, title: 'Top Things'});
 
 };

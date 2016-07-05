@@ -1,0 +1,20 @@
+<div class="container" style="margin-bottom: 66px;">
+  <div class="row">
+    <div class="col-xs-12">
+        <form id="top-things-form" action="/api/prototype/top-things" method="post">
+          <input type="hidden" class="form-control" name="place" value="{{ name }}">
+          <input type="hidden" class="form-control" name="placeId" value="{{ id }}">
+          <input type="hidden" class="form-control" name="lat" value="{{ lat }}">
+          <input type="hidden" class="form-control" name="long" value="{{ long }}">
+          {{> list/add-thing}}
+          {{> list/add-thing-input}}
+          {{#each topthings}}
+            {{> list/top-thing-input data=this}}
+          {{/ each}}
+          <div class="form-actions" style="padding: 16px; position: fixed; bottom: 0px; left: 0px; right: 0px; background-color: #fff; border-top: 1px solid #ddd;">
+					  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+				  </div>
+        </form>
+    </div>
+  </div>
+</div>
