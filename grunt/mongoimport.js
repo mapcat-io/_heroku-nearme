@@ -16,6 +16,7 @@ module.exports = {
         type : 'csv',
         file : 'public/data/things-collected.csv',
         upsert : true,
+        upsertFields: ['mapcat_id'],
         drop : false,
         headerLine: true
       },

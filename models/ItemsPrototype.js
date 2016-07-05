@@ -17,5 +17,5 @@ ItemsPrototype.add({
   category: { type: String }
 });
 
-ItemsPrototype.defaultColumns = 'name, state|20%'
+ItemsPrototype.defaultColumns = 'name, place, state'
 ItemsPrototype.register();

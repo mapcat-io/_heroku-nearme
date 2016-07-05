@@ -32,7 +32,8 @@ var routes = {
 	api_prototype: importRoutes('./api/prototype'),
 	api_v1: importRoutes('./api/v1'),
 	site: importRoutes('./site'),
-	login: importRoutes('./tool')
+	login: importRoutes('./tool'),
+	ios: importRoutes('./ios'),
 };
 
 // Setup Route Bindings
@@ -56,6 +57,9 @@ exports = module.exports = function(app) {
 	app.get('/tool/home', routes.login.index);
 	app.get('/tool/places', routes.login.places);
 	app.all('/tool/place/:id', routes.login.place_item_list);
+
+	//= iOS webviews
+	app.all('/ios/place/:id', routes.ios.ios_item_list);
 
 	// API PROTOTYPE
 	app.get('/api/prototype/things', routes.api_prototype.things);
