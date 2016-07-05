@@ -8,6 +8,15 @@
           <input type="hidden" class="form-control" name="placeId" value="{{ id }}">
           <input type="hidden" class="form-control" name="lat" value="{{ lat }}">
           <input type="hidden" class="form-control" name="long" value="{{ long }}">
+          <input type="hidden" class="form-control" name="address" value="{{ address }}">
+          <input type="hidden" class="form-control" name="city" value="{{ city }}">
+          <input type="hidden" class="form-control" name="country" value="{{ country }}">
+          <input type="hidden" class="form-control" name="phone" value="{{ phone }}">
+          <input type="hidden" class="form-control" name="postalCode" value="{{ postalCode }}">
+          <input type="hidden" class="form-control" name="state" value="{{ state }}">
+          <input type="hidden" class="form-control" name="twitterId" value="{{ twitterId }}">
+          <input type="hidden" class="form-control" name="siteUrl" value="{{ siteUrl }}">
+          <input type="hidden" class="form-control" name="categoryName" value="{{ categoryName }}">
           {{#each topthings}}
             {{> list/top-thing-input data=this}}
           {{/ each}}

@@ -2,10 +2,20 @@
   <div class="row">
     <div class="col-xs-12">
         <form id="top-things-form" action="/api/prototype/top-things" method="post">
-          <input type="hidden" class="form-control" name="place" value="{{ name }}">
-          <input type="hidden" class="form-control" name="placeId" value="{{ id }}">
-          <input type="hidden" class="form-control" name="lat" value="{{ lat }}">
-          <input type="hidden" class="form-control" name="long" value="{{ long }}">
+          <input type="hidden" class="form-control" name="place" value="{{ name }} ">
+          <input type="hidden" class="form-control" name="placeId" value="{{ id }} ">
+          <input type="hidden" class="form-control" name="lat" value="{{ lat }} ">
+          <input type="hidden" class="form-control" name="long" value="{{ long }} ">
+          <input type="hidden" class="form-control" name="address" value="{{ address }} ">
+          <input type="hidden" class="form-control" name="city" value="{{ city }} ">
+          <input type="hidden" class="form-control" name="country" value="{{ country }} ">
+          <input type="hidden" class="form-control" name="phone" value="{{ phone }} ">
+          <input type="hidden" class="form-control" name="postalCode" value="{{ postalCode }} ">
+          <input type="hidden" class="form-control" name="state" value="{{ state }} ">
+          <input type="hidden" class="form-control" name="source" value="{{ source }} ">
+          <input type="hidden" class="form-control" name="twitterId" value="{{ twitterId }} ">
+          <input type="hidden" class="form-control" name="siteUrl" value="{{ siteUrl }} ">
+          <input type="hidden" class="form-control" name="categoryName" value="{{ categoryName }} ">
           {{> list/add-thing}}
           {{> list/add-thing-input}}
           {{#each topthings}}

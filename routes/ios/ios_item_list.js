@@ -7,12 +7,22 @@ exports = module.exports = function(req, res) {
 	var view = new keystone.View(req, res);
 	var locals = res.locals;
 
-  var lat = req.query.lat || '',
-      long = req.query.long || '',
+  var address = req.query.address || '',
       id = req.query.id || '',
-      name = req.query.name || '';
+      categoryName = req.query.categoryName || '',
+      city = req.query.city || '',
+      country = req.query.country || '',
+      lat = req.query.lat || '',
+      long = req.query.long || '',
+      name = req.query.name || '',
+      phone = req.query.phone || '',
+      postalCode = req.query.postalCode || '',
+      state = req.query.state || '',
+      source = req.query.source || '',
+      twitterId = req.query.twitterId || '',
+      url = req.query.url || '';
 
-  console.log(name);
+  console.log(country);
 
 	// locals.section is used to set the currently selected
 	// item in the header navigation.
@@ -39,6 +49,21 @@ exports = module.exports = function(req, res) {
   });
 
 	// Render the view
-	view.render('ios-item-list', {layout: 'ios', id: id, lat: lat, long: long, name: name, title: 'Top Things'});
-
+	view.render('ios-item-list', {
+  layout: 'ios',
+  source: 'webView',
+  address: address,
+  id: id,
+  categoryName: categoryName,
+  city: city,
+  country: country,
+  lat: lat,
+  long: long,
+  name: name,
+  phone: phone,
+  postalCode: postalCode,
+  state: state,
+  source: source,
+  twitterId: twitterId,
+  title: 'Top Things'});
 };

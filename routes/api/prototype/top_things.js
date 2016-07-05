@@ -1,25 +1,38 @@
 var keystone = require('keystone'),
     async = require('async'),
-		ItemsPrototype = keystone.list('ItemsPrototype');
+		Item = keystone.list('Item');
 
 // populates csv dump into 'test' collection
 exports = module.exports = function(req, res) {
 
   var data = (req.method == 'POST') ? req.body : req.query;
   var items = data['itemName'];
-  console.log(data);
 
   if (Array.isArray(items)) {
     for (var i = 0; i < items.length; i++) {
       // create item data
       var obj = {};
-      obj["place"] = data.place;
-      obj["placeId"] = data.placeId;
-      obj["lat"] = data.lat;
-      obj["long"] = data.long;
+      obj["location"] = {};
+      obj["category"] = {};
+      obj["source"] = {};
+      obj["location"]["name"] = data.place;
+      obj["location"]["foursquareId"] = data.placeId;
+      obj["location"]["lat"] = data.lat;
+      obj["location"]["long"] = data.long;
+      obj["location"]["street"] = data.address;
+      obj["location"]["city"] = data.city;
+      obj["location"]["country"] = data.country;
+      obj["location"]["phone"] = data.phone;
+      obj["location"]["postalCode"] = data.postalCode;
+      obj["location"]["state"] = data.state;
+      obj["location"]["twitterId"] = data.twitterId;
+      obj["location"]["siteUrl"] = data.siteUrl;
+      obj["source"]["name"] = data.source;
+      obj["category"]["name"] = data.categoryName;
       obj["name"] = items[i];
       // instantiate item
-      var item = new ItemsPrototype.model(obj);
+      console.log(obj);
+      var item = new Item.model(obj);
       // // save item
       item.save(function(err) {
           if (err) return res.apiError('error', err);
@@ -28,12 +41,25 @@ exports = module.exports = function(req, res) {
   }
   else {
     var obj = {};
-    obj["place"] = data.place;
-    obj["placeId"] = data.placeId;
-    obj["lat"] = data.lat;
-    obj["long"] = data.long;
+    obj["location"] = {};
+    obj["category"] = {};
+    obj["source"] = {};
+    obj["location"]["name"] = data.place;
+    obj["location"]["foursquareId"] = data.placeId;
+    obj["location"]["lat"] = data.lat;
+    obj["location"]["long"] = data.long;
+    obj["location"]["street"] = data.address;
+    obj["location"]["city"] = data.city;
+    obj["location"]["country"] = data.country;
+    obj["location"]["phone"] = data.phone;
+    obj["location"]["postalCode"] = data.postalCode;
+    obj["location"]["state"] = data.state;
+    obj["location"]["twitterId"] = data.twitterId;
+    obj["location"]["siteUrl"] = data.siteUrl;
+    obj["source"]["name"] = data.source;
+    obj["category"]["name"] = data.categoryName;
     obj['name'] = data['itemName'];
-    var item = new ItemsPrototype.model(obj);
+    var item = new Item.model(obj);
     item.save(function(err) {
         if (err) return res.apiError('error', err);
     });
