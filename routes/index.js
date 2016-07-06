@@ -62,7 +62,8 @@ exports = module.exports = function(app) {
 	app.all('/ios/place/:id', routes.ios.ios_item_list);
 
 	// API PROTOTYPE
-	app.get('/api/prototype/things', routes.api_prototype.things);
+	app.get('/api/prototype/things', routes.api_prototype.things); // old url
+	app.get('/api/prototype/items', routes.api_prototype.items); // ios app retrieves from here
 	app.get('/api/prototype/places', routes.api_prototype.places);
 	app.all('/api/prototype/top-things', keystone.middleware.api, routes.api_prototype.top_things);
 

@@ -16,18 +16,24 @@ Item.add({
   csvId: { type: String },
   source: {
     name: { type: String },
-    id: { type: String }
+    id: { type: String },
+    url: { type: Types.Url }
   },
   // meta
   meta: {
     superThing: { type: String },
-    brandName: { type: String }
+    commonName: { type: String },
+    brandName: { type: String },
+    brandUrl: { type: Types.Url },
+    countryOrigin: { type: String }
   },
-  // category
+  // item category
   category: {
     name: { type: String },
     googleProduct: { type: String }
   },
+  // item tags
+  tags: { type: String, note: 'comma separated list' },
   // location
   location: {
     name: { type: String },
@@ -48,16 +54,16 @@ Item.add({
     foursquareId: { type: String },
     yelpId: { type: String },
     facebookId: { type: String },
-    twitterId: { type: String, note: 'The username, e.g., @mapcatio' },
+    twitterId: { type: String, note: 'The username, e.g., @mapcatio, but don\'t add the \'@\'.' },
     // urls
     siteUrl: { type: Types.Url },
-    // foursquareUrl: { type: Types.Url },
     yelpUrl: { type: Types.Url },
+    foursquareUrl: { type: Types.Url },
     facebookUrl: { type: Types.Url },
     instagramUrl: { type: Types.Url },
-    // twitterUrl: { type: Types.Url },
     googleStreetViewUrl: { type: Types.Url },
     googleSeeInsideUrl: { type: Types.Url },
+    zomatoUrl: { type: Types.Url },
   }
 });
 
