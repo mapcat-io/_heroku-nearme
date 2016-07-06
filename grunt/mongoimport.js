@@ -11,16 +11,34 @@ module.exports = {
     stopOnError : false,  //optional
     // rootdir: 'public/data/',
     collections : [
-      // Primary CSV upsert file
+      // Primary CSV upsert files
       {
         name : 'items',
         type : 'csv',
-        file : 'public/data/dir/csv-items-master.csv',
+        file : 'public/data/master/items/csv-food-master.csv',
         upsert : true,
         upsertFields: ['csvId'],
         drop : false,
         headerLine: true
       },
+      // {
+      //   name : 'items',
+      //   type : 'csv',
+      //   file : 'public/data/master/items/csv-itemsprototype-master.csv',
+      //   upsert : true,
+      //   upsertFields: ['csvId'],
+      //   drop : false,
+      //   headerLine: true
+      // },
+      // {
+      //   name : 'items',
+      //   type : 'csv',
+      //   file : 'public/data/master/items/csv-parks-master.csv',
+      //   upsert : true,
+      //   upsertFields: ['csvId'],
+      //   drop : false,
+      //   headerLine: true
+      // },
     ]
   }
 };
