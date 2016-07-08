@@ -12,11 +12,9 @@ exports = module.exports = function(req, res) {
   foursquare.getVenues(params, function(error, venues) {
 		if (!error) {
       result = venues.response;
-      console.log(venues.response);
       res.json(result);
 		}
     else {
-      console.log(error);
       res.json(error);
     }
   });
