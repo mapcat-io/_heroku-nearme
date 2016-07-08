@@ -13,9 +13,9 @@ module.exports = {
     collections : [
       // Primary CSV upsert files
       {
-        name : 'items',
+        name : 'topthings',
         type : 'csv',
-        file : 'public/data/master/items/csv-food-master.csv',
+        file : 'public/data/master/csv-topthings-master.csv',
         upsert : true,
         upsertFields: ['csvId'],
         drop : false,
