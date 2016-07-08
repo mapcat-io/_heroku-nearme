@@ -18,6 +18,7 @@ exports = module.exports = function(req, res) {
     foursquare.getVenues(params, function(error, venues) {
   		if (!error) {
         locals.places = venues.response.venues;
+        console.log(venues.response.venues);
         next(error);
   		}
       else {

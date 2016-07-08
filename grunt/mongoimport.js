@@ -11,192 +11,31 @@ module.exports = {
     stopOnError : false,  //optional
     // rootdir: 'public/data/',
     collections : [
+      // Primary CSV upsert files
       {
-        name : 'topthingsprototypes',
+        name : 'items',
         type : 'csv',
-        file : 'public/data/dir/top-food-items.csv',
+        file : 'public/data/master/items/csv-food-master.csv',
         upsert : true,
-        upsertFields: ['mapcat_id'],
+        upsertFields: ['csvId'],
         drop : false,
         headerLine: true
       },
       // {
-      //   name : 'placeprototypes',
+      //   name : 'items',
       //   type : 'csv',
-      //   file : 'public/data/dir/Places.csv',
+      //   file : 'public/data/master/items/csv-itemsprototype-master.csv',
       //   upsert : true,
-      //   upsertFields: ['mapcat_id'],
+      //   upsertFields: ['csvId'],
       //   drop : false,
       //   headerLine: true
       // },
       // {
-      //   name : 'things_prototype',
+      //   name : 'items',
       //   type : 'csv',
-      //   file : 'public/data/Curry-Up-Now.csv',
+      //   file : 'public/data/master/items/csv-parks-master.csv',
       //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/La-Oaxaquena.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/Little-Chihuahua.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/Mission-Grocery-Liquor.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/Morning-Due-Cafe.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/Taqueria-El-Castillito.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/The-Sycamore.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/Turners-Kitchen.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/Wan-Kee-Restaurant.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/Hoffmanns-Grill.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/Aster.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/Tuba.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/The-Liberties.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/Kiji-Sushi.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/Parks-Assets.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/21st-Amendment.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/3rd-and-Townsend-Liquor.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/HRD.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'things_prototype',
-      //   type : 'csv',
-      //   file : 'public/data/Mereb-Market.csv',
-      //   upsert : true,
-      //   upsertFields: ['Mapcat ID'],
+      //   upsertFields: ['csvId'],
       //   drop : false,
       //   headerLine: true
       // },

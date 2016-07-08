@@ -1,22 +1,31 @@
 {{> login/navbar}}
-<div class="container">
+<div class="container" style="margin-bottom: 66px;">
   {{> row-back url=backUrl}}
   <div class="row">
     <div class="col-xs-12">
-      {{#if contactSubmitted}}
-        <div class="alert alert-info" role="alert">
-          <strong>Success!</strong> The items have been submitted. Thanks for sharing your knowledge with the world.
-        </div>
-			{{else}}
-        <form>
+        <form id="top-things-form" action="/api/prototype/top-things" method="post">
+          <input type="hidden" class="form-control" name="place" value="{{ name }}">
+          <input type="hidden" class="form-control" name="placeId" value="{{ id }}">
+          <input type="hidden" class="form-control" name="lat" value="{{ lat }}">
+          <input type="hidden" class="form-control" name="long" value="{{ long }}">
+          <input type="hidden" class="form-control" name="address" value="{{ address }}">
+          <input type="hidden" class="form-control" name="city" value="{{ city }}">
+          <input type="hidden" class="form-control" name="country" value="{{ country }}">
+          <input type="hidden" class="form-control" name="phone" value="{{ phone }}">
+          <input type="hidden" class="form-control" name="postalCode" value="{{ postalCode }}">
+          <input type="hidden" class="form-control" name="state" value="{{ state }}">
+          <input type="hidden" class="form-control" name="twitterId" value="{{ twitterId }}">
+          <input type="hidden" class="form-control" name="siteUrl" value="{{ siteUrl }}">
+          <input type="hidden" class="form-control" name="categoryName" value="{{ categoryName }}">
           {{#each topthings}}
             {{> list/top-thing-input data=this}}
           {{/ each}}
+          {{> list/add-thing}}
+          {{> list/add-thing-input}}
           <div class="form-actions" style="padding: 16px; position: fixed; bottom: 0px; left: 0px; right: 0px; background-color: #fff; border-top: 1px solid #ddd;">
 					  <button type="submit" class="btn btn-primary btn-block">Submit</button>
 				  </div>
         </form>
-      {{/if}}
     </div>
   </div>
 </div>

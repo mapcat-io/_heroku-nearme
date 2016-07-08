@@ -32,7 +32,8 @@ var routes = {
 	api_prototype: importRoutes('./api/prototype'),
 	api_v1: importRoutes('./api/v1'),
 	site: importRoutes('./site'),
-	login: importRoutes('./login')
+	login: importRoutes('./tool'),
+	ios: importRoutes('./ios'),
 };
 
 // Setup Route Bindings
@@ -52,14 +53,19 @@ exports = module.exports = function(app) {
 	// merchants page
 	app.get('/merchants', routes.site.merchants);
 
-	//= views requiring login
-	app.get('/login/home', routes.login.index);
-	app.get('/login/places', routes.login.places);
-	app.get('/login/place/:id', routes.login.place_item_list);
+	//= Mapcat Tool
+	app.get('/tool/home', routes.login.index);
+	app.get('/tool/places', routes.login.places);
+	app.all('/tool/place/:id', routes.login.place_item_list);
+
+	//= iOS webviews
+	app.all('/ios/place/:id', routes.ios.ios_item_list);
 
 	// API PROTOTYPE
-	app.get('/api/prototype/things', routes.api_prototype.things);
+	app.get('/api/prototype/things', routes.api_prototype.things); // old url
+	app.get('/api/prototype/items', routes.api_prototype.items); // ios app retrieves from here
 	app.get('/api/prototype/places', routes.api_prototype.places);
+	app.all('/api/prototype/top-things', keystone.middleware.api, routes.api_prototype.top_things);
 
 	// API V1
 	app.get('/api/v1', routes.api_v1.index);

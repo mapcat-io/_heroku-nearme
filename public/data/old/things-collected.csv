@@ -1,0 +1,59 @@
+mapcat_id,createdAt,updatedAt,name,state,location.place,placeId,lat,long
+577927223263e70300ad52e6,7/3/16,7/3/16,golden oreos,Published,Crocker Amazon Bocce Courts,4c0ab9fdbbc676b08e624ad5,37.716557,-122.430839
+577927223263e70300ad52e7,7/3/16,7/3/16,grass fed beef,Published,Crocker Amazon Bocce Courts,4c0ab9fdbbc676b08e624ad5,37.716557,-122.430839
+577927223263e70300ad52e8,7/3/16,7/3/16,greek yogurt,Published,Crocker Amazon Bocce Courts,4c0ab9fdbbc676b08e624ad5,37.716557,-122.430839
+577927523263e70300ad52e9,7/3/16,7/3/16,IPA,Published,426 Russia Avenue,4c0a3539a1b32d7f23e998f0,37.720337,-122.431877
+577927523263e70300ad52ea,7/3/16,7/3/16,Jack Daniels,Published,426 Russia Avenue,4c0a3539a1b32d7f23e998f0,37.720337,-122.431877
+577927523263e70300ad52eb,7/3/16,7/3/16,Kind bars,Published,426 Russia Avenue,4c0a3539a1b32d7f23e998f0,37.720337,-122.431877
+577927523263e70300ad52ec,7/3/16,7/3/16,Pepsi Next,Published,426 Russia Avenue,4c0a3539a1b32d7f23e998f0,37.720337,-122.431877
+577927523263e70300ad52ed,7/3/16,7/3/16,Pliny the Elder,Published,426 Russia Avenue,4c0a3539a1b32d7f23e998f0,37.720337,-122.431877
+577927693263e70300ad52f0,7/3/16,7/3/16,Hint water,Published,Study Time,4f2f0f9fe4b09d49e9e62802,37.7201942,-122.436287
+5779289fef8df01ca906ff6e,7/3/16,7/3/16,IPA,Published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+57792f9fac3820fea93031e2,7/3/16,7/3/16,wine,Published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+577937ae83b6ae8caafe3b16,7/3/16,7/3/16,wine,Published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+57793bfe83176aa1abf49e97,7/3/16,7/3/16,wine,Published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+57793ca44edf711eaceacf4f,7/3/16,7/3/16,wine,Published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+57793d8b17f9cc71ac64ab43,7/3/16,7/3/16,whiskey,Published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+57793d9017f9cc71ac64ab45,7/3/16,7/3/16,whiskey,Published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+5779d21289daef0300c50dde,7/4/16,7/4/16,Cool path,Published,Path between office and car,56e0dc84498ec0f2be0815c2,37.530524,-122.268673
+5779207f8a03f5b1a72f755a,7/3/16,7/3/16,butter,Published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+5779207f8a03f5b1a72f755b,7/3/16,7/3/16,cake,Published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+577920998a03f5b1a72f755d,7/3/16,7/3/16,changing station,Published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+577920998a03f5b1a72f755c,7/3/16,7/3/16,champagne,Published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+577925733263e70300ad52e1,7/3/16,7/3/16,Jack Daniels,Published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+577925733263e70300ad52e2,7/3/16,7/3/16,Kind bars,Published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+577925733263e70300ad52e3,7/3/16,7/3/16,LaCroix,Published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+577925b83263e70300ad52e4,7/3/16,7/3/16,greek yogurt,Published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+577925b83263e70300ad52e5,7/3/16,7/3/16,green tea,Published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+577927693263e70300ad52ef,7/3/16,7/3/16,Fieldworks mandarina tart saison,Published,Study Time,4f2f0f9fe4b09d49e9e62802,37.7201942,-122.436287
+5779289fef8df01ca906ff6d,7/3/16,7/3/16,Hint water,Published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+577942d989daef0300c50dc1,7/3/16,7/3/16,changing station,Published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+5779458889daef0300c50dc2,7/3/16,7/3/16,Kind bars,Published,7-Eleven,4bad0cf3f964a52066283be3,37.70987282,-122.4579657
+577945dd89daef0300c50dc3,7/3/16,7/3/16,budweiser,Published,US Post Office,4b2a8b38f964a5201bab24e3,37.707784,-122.4554318
+5779474d89daef0300c50dc4,7/3/16,7/3/16,burgers,Published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+5779482089daef0300c50dc5,7/3/16,7/3/16,IPA,Published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+5779482089daef0300c50dc6,7/3/16,7/3/16,beer,Published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+5779482089daef0300c50dc7,7/3/16,7/3/16,bottled water,Published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+5779482089daef0300c50dc8,7/3/16,7/3/16,burgers,Published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+5779482089daef0300c50dc9,7/3/16,7/3/16,clean bathroom,Published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+5779482089daef0300c50dca,7/3/16,7/3/16,coke,Published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+5779482089daef0300c50dcb,7/3/16,7/3/16,diet coke,Published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+5779482089daef0300c50dcc,7/3/16,7/3/16,lagunitas,Published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+5779482089daef0300c50dcd,7/3/16,7/3/16,lemonade,Published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+5779482089daef0300c50dce,7/3/16,7/3/16,sandwiches,Published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+5779482089daef0300c50dcf,7/3/16,7/3/16,soda,Published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+5779482089daef0300c50dd0,7/3/16,7/3/16,Tuna melt,Published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+577957f689daef0300c50dd1,7/3/16,7/3/16,bottled water,Published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+577957f689daef0300c50dd2,7/3/16,7/3/16,bread,Published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+577957f689daef0300c50dd3,7/3/16,7/3/16,cake,Published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+577957f689daef0300c50dd4,7/3/16,7/3/16,candy,Published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+577957f689daef0300c50dd5,7/3/16,7/3/16,chocolate candy bars,Published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+577957f689daef0300c50dd6,7/3/16,7/3/16,clean bathroom,Published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+577957f689daef0300c50dd7,7/3/16,7/3/16,dark chocolate,Published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+577957f689daef0300c50dd8,7/3/16,7/3/16,green tea,Published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+577957f689daef0300c50dd9,7/3/16,7/3/16,hot coffee,Published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+577957f689daef0300c50dda,7/3/16,7/3/16,latte,Published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+5779cb8089daef0300c50ddb,7/4/16,7/4/16,Pool,Published,Lantern Cove Apartments,4c2d78a44e132d7f0c959cdf,37.53441111,-122.2751111
+5779cb9f89daef0300c50ddc,7/4/16,7/4/16,Clean bathrooms,Published,Lantern Cove Apartments,4c2d78a44e132d7f0c959cdf,37.53441111,-122.2751111
+57793ce1ae868342ac607aa6,7/3/16,7/4/16,wine,Draft,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+5779d13d89daef0300c50ddd,7/4/16,7/4/16,Tennis courts,Published,Port Royal Tennis Courts,4b6dffccf964a5204ea22ce3,37.53635478,-122.2656795

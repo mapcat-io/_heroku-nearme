@@ -1,0 +1,224 @@
+csvId,name,state,location.name,location.foursquareId,location.lat,location.long
+itemsprototype_0001,Skate park,published,Daly City Skatepark,4c60645713791b8d616c4faf,37.68992533,-122.4717319
+itemsprototype_0002,bread,published,Mr. Pickle's Sandwich Shop,4ac16987f964a520139720e3,37.69096496,-122.4720722
+itemsprototype_0003,coke,published,Mr. Pickle's Sandwich Shop,4ac16987f964a520139720e3,37.69096496,-122.4720722
+itemsprototype_0004,soda,published,Mr. Pickle's Sandwich Shop,4ac16987f964a520139720e3,37.69096496,-122.4720722
+itemsprototype_0005,Keys made,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0006,Decorative flags,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0007,changing station,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0008,clean bathroom,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0009,Water fountain,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0010,Milk crates,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0011,Vitamin water ,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0012,Monster drinks,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0013,bottled water,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0014,candy,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0015,coke,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0016,gum,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0017,iced tea,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0018,Birthday candles,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0019,Naked juice,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0020,bottled water,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0021,chai,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0022,coke,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0023,cold brew coffee,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0024,IPA,published,426 Russia Avenue,4c0a3539a1b32d7f23e998f0,37.720337,-122.431877
+itemsprototype_0025,Kind bars,published,7-Eleven,4bad0cf3f964a52066283be3,37.70987282,-122.4579657
+itemsprototype_0026,budweiser,published,US Post Office,4b2a8b38f964a5201bab24e3,37.707784,-122.4554318
+itemsprototype_0027,IPA,published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+itemsprototype_0028,beer,published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+itemsprototype_0029,coke,published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+itemsprototype_0030,soda,published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+itemsprototype_0031,wine,published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+itemsprototype_0032,bottled water,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0033,bread,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0034,cake,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0035,candy,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0036,chocolate candy bars,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0037,clean bathroom,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0038,dark chocolate,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0039,green tea,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0040,hot coffee,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0041,latte,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0042,Pool,published,Lantern Cove Apartments,4c2d78a44e132d7f0c959cdf,37.53441111,-122.2751111
+itemsprototype_0043,Clean bathrooms,published,Lantern Cove Apartments,4c2d78a44e132d7f0c959cdf,37.53441111,-122.2751111
+itemsprototype_0044,Tennis courts,published,Port Royal Tennis Courts,4b6dffccf964a5204ea22ce3,37.53635478,-122.2656795
+itemsprototype_0045,beer,published,Shanghai Dumpling King,516a2025e4b0b25be7de59b6,37.731689,-122.450972
+itemsprototype_0046,coke,published,Shanghai Dumpling King,516a2025e4b0b25be7de59b6,37.731689,-122.450972
+itemsprototype_0047,diet coke,published,Shanghai Dumpling King,516a2025e4b0b25be7de59b6,37.731689,-122.450972
+itemsprototype_0048,eggrolls,published,Shanghai Dumpling King,516a2025e4b0b25be7de59b6,37.731689,-122.450972
+itemsprototype_0049,green tea,published,Shanghai Dumpling King,516a2025e4b0b25be7de59b6,37.731689,-122.450972
+itemsprototype_0050,hot coffee,published,Shanghai Dumpling King,516a2025e4b0b25be7de59b6,37.731689,-122.450972
+itemsprototype_0051,lemonade,published,Shanghai Dumpling King,516a2025e4b0b25be7de59b6,37.731689,-122.450972
+itemsprototype_0052,soda,published,Shanghai Dumpling King,516a2025e4b0b25be7de59b6,37.731689,-122.450972
+itemsprototype_0053,wine,published,Shanghai Dumpling King,516a2025e4b0b25be7de59b6,37.731689,-122.450972
+itemsprototype_0054,Xiao long bao ,published,Shanghai Dumpling King,516a2025e4b0b25be7de59b6,37.731689,-122.450972
+itemsprototype_0055,Thai iced tea,published,Shanghai Dumpling King,516a2025e4b0b25be7de59b6,37.731689,-122.450972
+itemsprototype_0056,Walnut prawns,published,Shanghai Dumpling King,516a2025e4b0b25be7de59b6,37.731689,-122.450972
+itemsprototype_0057,Mango lassi,published,Shanghai Dumpling King,516a2025e4b0b25be7de59b6,37.731689,-122.450972
+itemsprototype_0058,Tsingtao beer,published,Shanghai Dumpling King,516a2025e4b0b25be7de59b6,37.731689,-122.450972
+itemsprototype_0059,Slide,published,Glen Canyon Park Playground,53bd8ee4498e373328e0b7e4,37.736688,-122.440576
+itemsprototype_0060,Baseball field,published,Glen Canyon Park,4a5a9aeff964a520a4ba1fe3,37.73736184,-122.4408047
+itemsprototype_0061,bottled water,published,Mr. Pickle's Sandwich Shop,4ac16987f964a520139720e3,37.69096496,-122.4720722
+itemsprototype_0062,diet coke,published,Mr. Pickle's Sandwich Shop,4ac16987f964a520139720e3,37.69096496,-122.4720722
+itemsprototype_0063,doritos,published,Mr. Pickle's Sandwich Shop,4ac16987f964a520139720e3,37.69096496,-122.4720722
+itemsprototype_0064,sandwiches,published,Mr. Pickle's Sandwich Shop,4ac16987f964a520139720e3,37.69096496,-122.4720722
+itemsprototype_0065,sourdough bread,published,Mr. Pickle's Sandwich Shop,4ac16987f964a520139720e3,37.69096496,-122.4720722
+itemsprototype_0066,Folding cooler - summer,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0067,lemonade,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0068,soda,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0069,Beef jerky,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0070,Turkey jerky,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0071,Cheetos,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0072,Fritos ,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0073,Sunflower seeds,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0074,5 hour energy,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0075,Vanilla sandwich cookies,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0076,Pork rinds,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0077,Sour patch kids,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0078,Spicy salsa chips,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0079,Cleaning supplies,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0080,Cherry coke,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0081,Protein shakes,published,The Home Depot,4bc3a18aabf495219c0dc493,37.69901723,-122.4830103
+itemsprototype_0082,Boba tea,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0083,bottled water,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0084,cake,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0085,clean bathroom,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0086,coke,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0087,diet coke,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0088,green tea,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0089,hot coffee,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0090,iced tea,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0091,juice,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0092,latte,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0093,milk,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0094,soda,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0095,Snapple,published,Sheng Kee Bakery,4b788040f964a52084d22ee3,37.69892491,-122.4823786
+itemsprototype_0096,golden oreos,published,Crocker Amazon Bocce Courts,4c0ab9fdbbc676b08e624ad5,37.716557,-122.430839
+itemsprototype_0097,grass fed beef,published,Crocker Amazon Bocce Courts,4c0ab9fdbbc676b08e624ad5,37.716557,-122.430839
+itemsprototype_0098,greek yogurt,published,Crocker Amazon Bocce Courts,4c0ab9fdbbc676b08e624ad5,37.716557,-122.430839
+itemsprototype_0099,Jack Daniels,published,426 Russia Avenue,4c0a3539a1b32d7f23e998f0,37.720337,-122.431877
+itemsprototype_0100,Kind bars,published,426 Russia Avenue,4c0a3539a1b32d7f23e998f0,37.720337,-122.431877
+itemsprototype_0101,Pepsi Next,published,426 Russia Avenue,4c0a3539a1b32d7f23e998f0,37.720337,-122.431877
+itemsprototype_0102,Pliny the Elder,published,426 Russia Avenue,4c0a3539a1b32d7f23e998f0,37.720337,-122.431877
+itemsprototype_0103,IPA,published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+itemsprototype_0104,wine,published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+itemsprototype_0105,wine,published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+itemsprototype_0106,wine,published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+itemsprototype_0107,wine,published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+itemsprototype_0108,whiskey,published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+itemsprototype_0109,whiskey,published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+itemsprototype_0110,Cool path,published,Path between office and car,56e0dc84498ec0f2be0815c2,37.530524,-122.268673
+itemsprototype_0111,butter,published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+itemsprototype_0112,cake,published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+itemsprototype_0113,changing station,published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+itemsprototype_0114,champagne,published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+itemsprototype_0115,Jack Daniels,published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+itemsprototype_0116,Kind bars,published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+itemsprototype_0117,LaCroix,published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+itemsprototype_0118,greek yogurt,published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+itemsprototype_0119,green tea,published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+itemsprototype_0120,Fieldworks mandarina tart saison,published,Study Time,4f2f0f9fe4b09d49e9e62802,37.7201942,-122.436287
+itemsprototype_0121,Hint water,published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+itemsprototype_0122,changing station,published,Crocker Amazon Playground,49d03beef964a520145b1fe3,37.71353515,-122.4314871
+itemsprototype_0123,burgers,published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+itemsprototype_0124,bottled water,published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+itemsprototype_0125,burgers,published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+itemsprototype_0126,clean bathroom,published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+itemsprototype_0127,diet coke,published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+itemsprototype_0128,lagunitas,published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+itemsprototype_0129,lemonade,published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+itemsprototype_0130,sandwiches,published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+itemsprototype_0131,Tuna melt,published,Hall Of Flame Burger,4b7f38cdf964a520362030e3,37.71756113,-122.473938
+itemsprototype_0132,bottled water,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0133,bread,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0134,cake,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0135,candy,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0136,chocolate candy bars,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0137,clean bathroom,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0138,dark chocolate,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0139,green tea,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0140,hot coffee,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0141,latte,published,Thorough Bread and Pastry,49f13784f964a5209f691fe3,37.76673,-122.429026
+itemsprototype_0142,Pool,published,Lantern Cove Apartments,4c2d78a44e132d7f0c959cdf,37.53441111,-122.2751111
+itemsprototype_0143,Clean bathrooms,published,Lantern Cove Apartments,4c2d78a44e132d7f0c959cdf,37.53441111,-122.2751111
+itemsprototype_0144,Tennis courts,published,Port Royal Tennis Courts,4b6dffccf964a5204ea22ce3,37.53635478,-122.2656795
+itemsprototype_0145,diet coke,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0146,green tea,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0147,hot coffee,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0148,iced coffee,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0149,iced tea,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0150,macaroons,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0151,soda,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0152,Macaroon ice cream sandwiches,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0153,Strawberry iced tea,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0154,Pomegranate iced tea,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0155,Kettle corn,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0156,Earl grey iced tea,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0157,Famous amos cookie pack,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0158,Cupcakes,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0159,Chips,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0160,Kid snacks,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0161,Baby food pouches,published,Ketsourine Macarons,56087ee9498e0f46dcfda1ff,37.6995397,-122.4824222
+itemsprototype_0162,Test,published,LUSH Fresh Handmade Cosmetics,4a398f23f964a520939f1fe3,37.78695777,-122.4081648
+itemsprototype_0163,Tennis court,published,Crocker Amazon Tennis Courts,52efc1fa498e81a266945708,37.714071,-122.432377
+itemsprototype_0164,Soccer field,published,Crocker Amazon Soccer Fields,506704abe4b01f86f0eb73b7,37.71338588,-122.4291867
+itemsprototype_0165,God,published,Church of the Epiphany,4ace9a2cf964a52061d120e3,37.71557626,-122.4342963
+itemsprototype_0166,Foot massage,published,Health feet Massage,50e4f614e4b047678c664b60,37.71470509,-122.4368566
+itemsprototype_0167,pizza,published,Pizzarella Naples,4b64f19ff964a52069db2ae3,37.71418691,-122.4363203
+itemsprototype_0168,Plastic bag dispenser,published,La Grande Community Garden,4af71a3df964a520d90522e3,37.716141,-122.4276438
+itemsprototype_0169,Trash can ,published,La Grande Community Garden,4af71a3df964a520d90522e3,37.716141,-122.4276438
+itemsprototype_0170,Community garden,published,La Grande Community Garden,4af71a3df964a520d90522e3,37.716141,-122.4276438
+itemsprototype_0171,sandwiches,published,Stop N Wrap,554e8452498e5cd466827303,37.71415936,-122.4358502
+itemsprototype_0172,Bubble milk Tea,published,5 Degree Tea House,50d4a638e4b02c8340848356,37.72938472,-122.4042177
+itemsprototype_0173,Crepes,published,5 Degree Tea House,50d4a638e4b02c8340848356,37.72938472,-122.4042177
+itemsprototype_0174,Boba tea,published,5 Degree Tea House,50d4a638e4b02c8340848356,37.72938472,-122.4042177
+itemsprototype_0175,bacon,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0176,changing station,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0177,clean bathroom,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0178,coke,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0179,diet coke,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0180,eggs,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0181,hot coffee,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0182,juice,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0183,latte,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0184,milk,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0185,soda,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0186,sourdough bread,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0187,Fresh squeezed OJ,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0188,Eggs benedict,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0189,Tater tots,published,Breakfast at Tiffany's,545e52e9498e36ee547c6aeb,37.73042433,-122.4047741
+itemsprototype_0190,Chinese herbs,published,San Bruno Herbs Inc,51ad0241498ebcb60d41282a,37.729304,-122.4043
+itemsprototype_0191,hot coffee,published,Fat Beli Deli,4adcc1a5f964a520762f21e3,37.72884508,-122.4041933
+itemsprototype_0192,latte,published,Fat Beli Deli,4adcc1a5f964a520762f21e3,37.72884508,-122.4041933
+itemsprototype_0193,sandwiches,published,Fat Beli Deli,4adcc1a5f964a520762f21e3,37.72884508,-122.4041933
+itemsprototype_0194,soup,published,Fat Beli Deli,4adcc1a5f964a520762f21e3,37.72884508,-122.4041933
+itemsprototype_0195,sourdough bread,published,Fat Beli Deli,4adcc1a5f964a520762f21e3,37.72884508,-122.4041933
+itemsprototype_0196,Drip Coffee,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0197,Mural,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0198,Chemex filters,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0199,Beehouse coffee dripper,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0200,Aeropress single cup coffee extractor,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0201,Stage Kettle ,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0202,AWS scale,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0203,Fancy toast,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0204,V60 Coffee dripper,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0205,Almond butter,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0206,Porlex grinder,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0207,Whole bean coffee,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0208,Chemex ,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0209,Americano ,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0210,Macchiato,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0211,French press,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0212,Mocha,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0213,Cappuccino ,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0214,Affogato,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0215,Industrial vibe,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0216,Hot chocolate,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0217,Architectural benches,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0218,Little free library,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0219,hot coffee,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0220,iced coffee,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0221,chai,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0222,latte,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529
+itemsprototype_0223,iced tea,published,Four Barrel Coffee,5169af8d498e44df71319f6b,37.72890953,-122.4038529

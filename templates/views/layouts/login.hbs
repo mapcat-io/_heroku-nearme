@@ -34,8 +34,11 @@
       };
       // places url
       $( ".row.place" ).on( "click", function() {
-        var id = $(this).attr('data-id');
-        location.href= '/login/place/' + id;
+        var id = $(this).attr('data-id'),
+            name = $(this).attr('data-name'),
+            lat = $(this).attr('data-lat'),
+            long = $(this).attr('data-long');
+        location.href= '/tool/place/' + id + '/?name=' + encodeURIComponent(name) + '&id=' + id + '&lat=' + lat + '&long=' + long;
       });
       // get user location
       var lat = '', long = '';
@@ -47,18 +50,67 @@
         console.log(location.coords.accuracy);
         lat = location.coords.latitude;
         long = location.coords.longitude;
-        $('#see-places-btn').show();
+        $('#see-places-btn').html('See Places Around Me');
+        $('#see-places-btn').removeClass('disabled');
       });
       $( "#see-places-btn" ).on( "click", function() {
-        location.href= '/login/places/?lat=' + lat + '&long=' + long;
+        location.href= '/tool/places/?lat=' + lat + '&long=' + long;
         event.preventDefault();
       });
       // select background in top-things url
-      $( ".topthing-checkbox-row" ).on( "click", function() {
-        $( this ).find('input').toggleCheck();
-        $( this ).toggleClass('select-background');
+      // $(".topthing-checkbox-row").on( "click", function() {
+      //   $( this ).find('input').toggleCheck();
+      //   $( this ).toggleClass('select-background');
+      // });
+      // add an item
+      $( ".topthing-add-item-row" ).on( "click", function() {
+        console.log('add an item');
+        $('#add-thing-input .checkbox label').html('<input type="checkbox" value="New Name" name="itemName" checked>');
+        $('#add-thing-input').show();
+        var input = $('#add-thing-input').html();
+        $(input).insertBefore('#add-thing').show();
       });
+    </script>
+    <script type="text/javascript">
+      // top-things post form-group
+      $( "#top-things-form" ).submit(function( event ) {
+        // Stop form from submitting normally
+        event.preventDefault();
+        // Get some values from elements on the page:
+        $( "#top-things-form button" ).addClass('disabled');
 
+        $('.new-item').each(function() {
+          console.log($(this).find('input:text').val());
+          var value = $(this).find('input:text').val();
+          $(this).find('.col-xs-12').append('<h5 style="text-transform: capitalize;">' + value + '</h5>');
+          $(this).find('input[type=checkbox]:checked').val(value);
+          $(this).find('input:text').parent().remove();
+        });
+
+        $('#add-thing-input').remove();
+        $('#add-thing').remove();
+
+        var $form = $( this ),
+            term = $form.find( "input[name='s']" ).val(),
+            url = '/api/prototype/top-things';
+            form_data = $form.serialize();
+
+        $.ajax({
+          type: "POST",
+          url: url,
+          dataType: 'json',
+          data: form_data,
+          success: function() {
+            console.log('success');
+            $( "#top-things-form button" ).addClass('btn-success').html('Success!');
+          },
+          error: function() {
+            console.log('error');
+            $( "#top-things-form button" ).addClass('btn-danger').html('There was an error');
+          }
+        });
+
+      });
     </script>
   </body>
 </html>
