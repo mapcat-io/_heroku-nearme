@@ -1,122 +1,1 @@
-mapcat_id,name,category
-topthings_0001,greek yogurt,Yogurt
-topthings_0002,butter,
-topthings_0003,milk,
-topthings_0004,eggs,
-topthings_0005,cream chesse,
-topthings_0006,juice,
-topthings_0007,ice cream,
-topthings_0008,gelato,Ice cream
-topthings_0009,breakfast burrito,
-topthings_0010,waffles,
-topthings_0011,pop tarts,Breakfast
-topthings_0012,Kind bars,Snacks
-topthings_0013,LaCroix ,Sparkling water
-topthings_0014,red bull,Beverage
-topthings_0015,Monster drinks,Beverage
-topthings_0016,iced coffee,Coffee
-topthings_0017,starbucks coffee (to go),Coffee
-topthings_0018,iced tea,Tea
-topthings_0019,cold brew coffee,"Coffee, iced coffee"
-topthings_0020,secret pink drink / secret orange drink ,Starbucks
-topthings_0021,smoothies,
-topthings_0022,soda,
-topthings_0023,coke,Soda
-topthings_0024,diet coke,Soda
-topthings_0025,Mountain Dew Kickstart,Soda
-topthings_0026,Pepsi Next,Soda
-topthings_0027,lemonade,Beverage
-topthings_0028,Boba tea,Tea
-topthings_0029,bottled water,
-topthings_0030,sparkling water,
-topthings_0031,coconut water,
-topthings_0032,bai water,
-topthings_0033,Hint water,
-topthings_0034,kombucha,Beverage
-topthings_0035,aloe water,Beverage
-topthings_0036,mate,S. American drink
-topthings_0037,hot coffee,Coffee
-topthings_0038,chai,Tea
-topthings_0039,green tea,Tea
-topthings_0040,latte,Espresso drinks
-topthings_0041,candy,
-topthings_0042,gum,
-topthings_0043,haribo gummies,Candy
-topthings_0044,chocolate candy bars,Candy
-topthings_0045,dark chocolate,Chocolate
-topthings_0046,"british chocolates (cadbury, lion, aero)",Chocolate
-topthings_0047,german chocolates,Chocolate
-topthings_0048,doritos,Chips
-topthings_0049,Ruffles deep ridged chips,Chips
-topthings_0050,kettle chips,Chips
-topthings_0051,salsa,
-topthings_0052,bread,
-topthings_0053,sourdough bread,Bread
-topthings_0054,dutch crunch roll,Bread
-topthings_0055,gluten free bread,Bread
-topthings_0056,donuts,
-topthings_0057,cake,
-topthings_0058,pie,
-topthings_0059,Pocky,Candy
-topthings_0060,golden oreos,Candy
-topthings_0061,macaroons,Cookies
-topthings_0062,pasta,
-topthings_0063,beer,
-topthings_0064,lagunitas,Beer
-topthings_0065,anchor steam beer,Beer
-topthings_0066,sour beer,Beer
-topthings_0067,Not Your Father's Root Beer,Alcoholic beverage
-topthings_0068,Pliny the Elder ,Beer
-topthings_0069,Shandy,Alcoholic beverage
-topthings_0070,Cellarmakers quad dobis  ,Beer
-topthings_0071,Fieldworks mandarina tart saison  ,Beer
-topthings_0072,Miller  ,Beer
-topthings_0073,Porter  ,Beer
-topthings_0074,budweiser  ,Beer
-topthings_0075,IPA  ,Beer
-topthings_0076,stout  ,Beer
-topthings_0077,cider,Alcoholic beverage
-topthings_0078,ramen,
-topthings_0079,pizza,"Pizza, Frozen"
-topthings_0080,fried chicken,Chicken
-topthings_0081,sandwiches,
-topthings_0082,eggrolls,Snacks
-topthings_0083,soup,
-topthings_0084,mac and cheese,
-topthings_0085,hot pockets,Snacks
-topthings_0086,sushi,Seafood
-topthings_0087,oysters,Seafood
-topthings_0088,smoked trout,Seafood
-topthings_0089,grass fed beef,Beef
-topthings_0090,Spam,
-topthings_0091,chicken,
-topthings_0092,chicken wings,
-topthings_0093,pulled pork,
-topthings_0094,burgers,
-topthings_0095,bacon,
-topthings_0096,bone broth,
-topthings_0097,toilet paper,
-topthings_0098,advil,Drugs
-topthings_0099,tampons,
-topthings_0100,irish coffee,Beverage
-topthings_0101,whiskey,Liquor
-topthings_0102,Jack Daniels,Liquor
-topthings_0103,tequila,Liquor
-topthings_0104,vodka,Liquor
-topthings_0105,wine,
-topthings_0106,blue champagne,Champagne
-topthings_0107,champagne,
-topthings_0108,rose ,Wine
-topthings_0109,vinho verde ,Wine
-topthings_0110,pinot noir,Wine
-topthings_0111,Bandits ,Box wine
-topthings_0112,coconut oil,
-topthings_0113,avocado,
-topthings_0114,lemons,
-topthings_0115,bananas,
-topthings_0116,acai,"Fruit, Frozen"
-topthings_0117,condoms,
-topthings_0118,baby food,
-topthings_0119,diapers,Baby
-topthings_0120,clean bathroom,Bathroom
-topthings_0121,changing station,Baby
+mapcat_id,name,category,topthings_0001,beer,,topthings_0002,budweiser  ,Beer,topthings_0003,Miller  ,Beer,topthings_0004,stout  ,Beer,topthings_0005,IPA  ,Beer,topthings_0006,Porter  ,Beer,topthings_0007,sour beer,Beer,topthings_0008,lagunitas,Beer,topthings_0009,anchor steam beer,Beer,topthings_0010,Pliny the Elder ,Beer,topthings_0011,Cellarmakers quad dobis  ,Beer,topthings_0012,Fieldworks mandarina tart saison  ,Beer,topthings_0013,Pliny the Elder ,Beer,topthings_0014,cider,Alcoholic beverage,topthings_0015,Not Your Father's Root Beer,Alcoholic beverage,topthings_0016,Shandy,Alcoholic beverage,topthings_0017,soda,Soda,topthings_0018,coke,Soda,topthings_0019,diet coke,Soda,topthings_0020,mexican coke,Soda,topthings_0021,Mountain Dew Kickstart,Soda,topthings_0022,Pepsi Next,Soda,topthings_0023,juice,,topthings_0024,lemonade,,topthings_0025,5 hour energy,Energy drink,topthings_0026,red bull,Energy drink,topthings_0027,Monster drinks,Energy drink,topthings_0028,starbucks coffee (to go),Coffee drinks,topthings_0029,iced tea,Tea,topthings_0030,bottled water,Water,topthings_0031,sparkling water,,topthings_0032,LaCroix ,Sparkling water,topthings_0033,San Pellegrino ,Sparkling water,topthings_0034,coconut water,,topthings_0035,Bai drinks,,topthings_0036,Hint water,,topthings_0037,kombucha,Beverage,topthings_0038,aloe water,Beverage,topthings_0039,greek yogurt,Yogurt,topthings_0040,butter,Grocery,topthings_0041,milk,Grocery,topthings_0042,eggs,Grocery,topthings_0043,cream cheese,Grocery,topthings_0044,salsa,Grocery,topthings_0045,chicken,Grocery,topthings_0046,smoked salmon,Seafood,topthings_0047,smoked trout,Seafood,topthings_0048,bacon,Grocery,topthings_0049,grass fed beef,Beef,topthings_0050,burgers,"Dish, Grocery",topthings_0051,ice cream,Frozen,topthings_0052,ice cream sandwich,Frozen,topthings_0053,gelato,Ice Cream,topthings_0054,acai,"Fruit, Frozen",topthings_0055,breakfast burrito,"Frozen, Dish",topthings_0056,waffles,"Frozen, Dish",topthings_0057,hot pockets,"Frozen, Snacks",topthings_0058,pizza,"Pizza, Frozen",topthings_0059,vodka,Liquor,topthings_0060,wine,,topthings_0061,blue champagne,Champagne,topthings_0062,champagne,Sparkling wine,topthings_0063,rose ,Wine,topthings_0064,vinho verde ,Wine,topthings_0065,pinot noir,Wine,topthings_0066,sauvignon blanc,Wine,topthings_0067,Bandits ,Box wine,topthings_0068,Jack Daniels,Liquor,topthings_0069,tequila,Liquor,topthings_0070,chips,,topthings_0071,doritos,Chips,topthings_0072,Ruffles deep ridged chips,Chips,topthings_0073,kettle chips,Chips,topthings_0074,gum,,topthings_0075,candy,Candy,topthings_0076,haribo gummies,Candy,topthings_0077,chocolate candy bars,Candy,topthings_0078,dark chocolate,Chocolate,topthings_0079,"british chocolates (cadbury, lion, aero)",Chocolate,topthings_0080,german chocolates,Chocolate,topthings_0081,Pocky,Candy,topthings_0082,cookies,,topthings_0083,golden oreos,Cookie,topthings_0084,macaroons,Cookie,topthings_0085,Kind bars,Snacks,topthings_0086,donuts,,topthings_0087,cake,Baked goods,topthings_0088,pasta,,topthings_0089,bread,,topthings_0090,sourdough bread,Bread,topthings_0091,dutch crunch roll,Bread,topthings_0092,gluten free bread,Bread,topthings_0093,soup,"Grocery, Lunch  ",topthings_0094,bouillon,Stock cube,topthings_0095,mac and cheese,Grocery,topthings_0096,ramen,Grocery,topthings_0097,Spam,Grocery,topthings_0098,toilet paper,,topthings_0099,advil,Drugs,topthings_0100,tampons,,topthings_0101,condoms,,topthings_0102,coconut oil,Grocery,topthings_0103,avocado,Grocery,topthings_0104,lemons,Grocery,topthings_0105,bananas,Grocery,topthings_0106,Snack pouches,Kid food,topthings_0107,baby food,Baby,topthings_0108,diapers,Baby,topthings_0109,clean bathroom,Bathroom,topthings_0110,changing station,Baby,topthings_0111,hot coffee,Coffee,topthings_0112,drip coffee,Coffee,topthings_0113,iced coffee,Coffee,topthings_0114,cold brew,Coffee,topthings_0115,latte,Espresso drinks,topthings_0116,hot chocolate,,topthings_0117,mexican hot chocolate,hot chocolate,topthings_0118,hot tea,Tea,topthings_0119,iced tea,Tea,topthings_0120,chai,Tea,topthings_0121,iced chai,Tea,topthings_0122,green tea,Tea,topthings_0123,mate,South American drink,topthings_0124,Boba tea,Bubble tea,topthings_0125,irish coffee,Beverage,,,,topthings_0126,muffin,Baked goods,topthings_0127,scone,Baked goods,topthings_0128,croissant,Baked goods,topthings_0129,salad,,topthings_0130,sandwich,,topthings_0131,smoothies,,topthings_0132,secret pink drink / secret orange drink ,Starbucks,topthings_0133,eggrolls,Snacks,topthings_0134,mac and cheese,Dish,topthings_0135,pie,,topthings_0136,sushi,,topthings_0137,chicken wings,Dish,topthings_0138,pulled pork,Dish,topthings_0139,fried chicken,Chicken,topthings_0140,oysters,"Grocery, Dish",topthings_0141,$1 oysters,Dish,
