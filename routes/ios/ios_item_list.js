@@ -40,7 +40,7 @@ exports = module.exports = function(req, res) {
 
   // Load Top Things Prototype
   view.on('init', function (next) {
-    var q = TopThings.model.find({}).sort({ 'name' : 1})
+    var q = TopThings.model.find({})
     q.exec(function (err, result) {
       locals.topthings = result;
       next(err);
