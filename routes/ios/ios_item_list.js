@@ -1,6 +1,6 @@
 var keystone = require('keystone'),
     PlacePrototype = keystone.list('PlacePrototype'),
-    TopThingsPrototype = keystone.list('TopThingsPrototype');
+    TopThings = keystone.list('TopThings');
 
 exports = module.exports = function(req, res) {
 
@@ -40,7 +40,7 @@ exports = module.exports = function(req, res) {
 
   // Load Top Things Prototype
   view.on('init', function (next) {
-    var q = TopThingsPrototype.model.find({}).sort({ 'name' : 1})
+    var q = TopThings.model.find({}).sort({ 'name' : 1})
     q.exec(function (err, result) {
       locals.topthings = result;
       next(err);
