@@ -40,17 +40,12 @@ var routes = {
 exports = module.exports = function(app) {
 	// Views
 
-	// home page
+	//= Site
 	app.get('/', routes.site.index);
-	// login page
 	app.get('/login', routes.views.index);
-	// main search page
 	app.get('/search', routes.views.search);
-	// thing page
 	app.get('/thing/:id', routes.views.thing);
-	// place page
 	app.get('/place/:id', routes.views.place);
-	// merchants page
 	app.get('/merchants', routes.site.merchants);
 
 	//= Mapcat Tool

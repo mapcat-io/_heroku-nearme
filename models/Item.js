@@ -17,6 +17,7 @@ Item.add({
   source: {
     name: { type: String },
     id: { type: String },
+    deviceId: { type: String },
     url: { type: Types.Url }
   },
   // meta

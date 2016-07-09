@@ -19,6 +19,7 @@ exports = module.exports = function(req, res) {
       postalCode = req.query.postalCode || '',
       state = req.query.state || '',
       source = req.query.source || '',
+      deviceId = req.query.deviceId || '',
       twitterId = req.query.twitterId || '',
       url = req.query.url || '';
 
@@ -64,6 +65,7 @@ exports = module.exports = function(req, res) {
   postalCode: postalCode,
   state: state,
   source: source,
+  deviceId: deviceId,
   twitterId: twitterId,
   title: 'Top Things'});
 };

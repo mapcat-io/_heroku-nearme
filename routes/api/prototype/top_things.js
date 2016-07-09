@@ -28,6 +28,7 @@ exports = module.exports = function(req, res) {
       obj["location"]["twitterId"] = data.twitterId;
       obj["location"]["siteUrl"] = data.siteUrl;
       obj["source"]["name"] = data.source;
+      obj["source"]["deviceId"] = data.deviceId;
       obj["category"]["name"] = data.categoryName;
       obj["name"] = items[i];
       // instantiate item
@@ -57,6 +58,7 @@ exports = module.exports = function(req, res) {
     obj["location"]["twitterId"] = data.twitterId;
     obj["location"]["siteUrl"] = data.siteUrl;
     obj["source"]["name"] = data.source;
+    obj["source"]["deviceId"] = data.deviceId;
     obj["category"]["name"] = data.categoryName;
     obj['name'] = data['itemName'];
     var item = new Item.model(obj);
