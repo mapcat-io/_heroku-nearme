@@ -10,8 +10,8 @@ var Item = new keystone.List('Item', {
 
 Item.add({
   state: { type: Types.Select, options: 'draft, published, archived', default: 'published' },
-  name: { type: String, required: true },
-  description: { type: Types.Textarea },
+  name: { type: String, required: true, index: true },
+  description: { type: Types.Textarea, index: true },
   primaryImage: { type: Types.S3File, path: 'heroku-nearme', filename: function(item, filename){ return item._id + '-' + filename; }, allowedTypes: ['image/gif', 'image/jpeg', 'image/png'] },
   csvId: { type: String },
   source: {
@@ -29,14 +29,14 @@ Item.add({
   },
   // item category
   category: {
-    name: { type: String },
+    name: { type: String, index: true },
     googleProduct: { type: String }
   },
   // item tags
   tags: { type: String, note: 'comma separated list' },
   // location
   location: {
-    name: { type: String },
+    name: { type: String, index: true },
     lat: { type: Types.Number },
     long: { type: Types.Number },
     street: { type: String },
@@ -48,7 +48,7 @@ Item.add({
     hours: { type: String },
     phone: { type: String },
     // location category
-    categoryName: { type: String },
+    categoryName: { type: String, index: true },
     categoryYelp: { type: String },
     // ids
     foursquareId: { type: String },

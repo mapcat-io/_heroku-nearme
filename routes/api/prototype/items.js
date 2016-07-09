@@ -16,7 +16,6 @@ exports = module.exports = function(req, res) {
       {"category.name": { "$regex": q, "$options": "i" }},
       {"location.name": { "$regex": q, "$options": "i" }},
       {"location.categoryName": { "$regex": q, "$options": "i" }},
-      {"location.categoryYelp": { "$regex": q, "$options": "i" }},
     ]}, function(err, items) {
     if (err) throw err;
     // google analytics
