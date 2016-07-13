@@ -59,6 +59,7 @@ exports = module.exports = function(app) {
 	// API PROTOTYPE
 	app.get('/api/prototype/things', routes.api_prototype.things); // old url
 	app.get('/api/prototype/items', routes.api_prototype.items); // ios app retrieves from here
+	app.all('/api/prototype/post-items', keystone.middleware.api, keystone.middleware.cors, routes.api_prototype.post_items); // ios app posts to here
 	app.get('/api/prototype/places', routes.api_prototype.places);
 	app.all('/api/prototype/top-things', keystone.middleware.api, routes.api_prototype.top_things);
 

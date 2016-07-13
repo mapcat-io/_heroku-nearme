@@ -65,6 +65,9 @@ Item.add({
     googleStreetViewUrl: { type: Types.Url },
     googleSeeInsideUrl: { type: Types.Url },
     zomatoUrl: { type: Types.Url },
+  },
+  dump: {
+    foursquare: { type: String }
   }
 });
 

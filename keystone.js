@@ -57,6 +57,9 @@ keystone.set('locals', {
 
 keystone.set('routes', require('./routes'));
 
+// allow cors for downlaod form
+// keystone.set('cors allow origin', true);
+
 
 // Setup common locals for your emails. The following are required by Keystone's
 // default email templates, you may remove them if you're using your own.
