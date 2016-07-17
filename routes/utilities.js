@@ -11,10 +11,15 @@ module.exports = {
     });
   },
   // general server side universal analytics
-  analyticsEventAPI: function(category, action, label, value) {
+  analyticsEventAPI: function(category, action, label, value, deviceId) {
     var ua = require('universal-analytics');
     // universal-analytics ID
-    var visitor = ua('UA-77560033-1'); // Mapcat GA ID
+    if (userId) {
+      var visitor = ua('UA-77560033-1', deviceId); // Mapcat GA ID with user ios deviceId
+    }
+    else {
+      var visitor = ua('UA-77560033-1'); // Mapcat GA ID
+    }
     // if label is req object, parse into full url
     if (label.socket) {
       label = this.fullUrl(label);

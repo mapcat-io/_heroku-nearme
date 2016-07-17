@@ -33,7 +33,7 @@ exports = module.exports = function(req, res) {
         "foursquare": data["foursquare"]
       }
     };
-    
+
     for (var itemName in data["items"]) {
       obj["name"] = data["items"][itemName]
       var item = new Item.model(obj)
@@ -41,8 +41,8 @@ exports = module.exports = function(req, res) {
           if (err) return res.apiError('error', err);
       });
     }
-
     // item has been saved
+    utilities.analyticsEventAPI('api', 'add-item', req, 1, data["source"]["deviceId"]);
     res.apiResponse({
       post: 'items have been saved'
     });
