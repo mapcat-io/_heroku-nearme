@@ -7,7 +7,7 @@ exports = module.exports = function(req, res) {
 
   if (req.method == 'POST') {
     var data = (req.method == 'POST') ? req.body : req.query;
-
+    var deviceId = data["source"]["deviceId"] || '';
     var obj = {
       "location": {
         "name": data["foursquare"]["name"],
@@ -42,7 +42,7 @@ exports = module.exports = function(req, res) {
       });
     }
     // item has been saved
-    utilities.analyticsEventAPI('api', 'add-item', req, 1, data["source"]["deviceId"]);
+    utilities.analyticsEventAPI('api', 'add-item', req, 1, deviceId);
     res.apiResponse({
       post: 'items have been saved'
     });
