@@ -14,7 +14,7 @@ module.exports = {
   analyticsEventAPI: function(category, action, label, value, deviceId) {
     var ua = require('universal-analytics');
     // universal-analytics ID
-    if (userId) {
+    if (deviceId) {
       var visitor = ua('UA-77560033-1', deviceId); // Mapcat GA ID with user ios deviceId
     }
     else {

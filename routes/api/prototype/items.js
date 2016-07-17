@@ -4,7 +4,7 @@ var keystone = require('keystone'),
 
 exports = module.exports = function(req, res) {
   var q = req.query.q.trim() || '', // search term
-      t = req.query.t || ''; // raw result
+      t = req.query.t || '', // raw result
       u = req.query.u || ''; // ios deviceId
 
   // regex to match word starts with q
@@ -21,7 +21,6 @@ exports = module.exports = function(req, res) {
     if (err) throw err;
     // google analytics
     utilities.analyticsEventAPI('api', 'search', req, 1, u);
-
     // all the items
     res.json({items: items});
   });
