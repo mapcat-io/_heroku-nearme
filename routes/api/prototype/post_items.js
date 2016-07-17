@@ -1,7 +1,8 @@
 var keystone = require('keystone'),
     async = require('async'),
 		Item = keystone.list('Item'),
-    TopThings = keystone.list('TopThings');
+    TopThings = keystone.list('TopThings'),
+    utilities = require('../../utilities');
 
 exports = module.exports = function(req, res) {
 
