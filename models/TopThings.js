@@ -14,6 +14,7 @@ TopThings.add({
   csvId: { type: String },
   category: {
     thing: { type: String },
+    place: { type: String },
     foursquareId: { type: String }, // ideally determines whether the item is displayed for the add place top things view
     googleProduct: { type: String }
   }
