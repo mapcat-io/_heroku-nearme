@@ -7,13 +7,14 @@ exports = module.exports = function(req, res) {
       t = req.query.t || '', // raw, aggregate or find variations
       u = req.query.u || ''; // ios deviceId
 
-  // regex to match word starts with q
+  // regex to match any string that starts with q
   q = '\\b' + q + '\\S*';
 
   var query = [
     // fields to check for the search
     {"name": { "$regex": q, "$options": "i" }},
-    {"description": { "$regex": q, "$options": "i" }},
+    {"meta.superThing": { "$regex": q, "$options": "i" }},
+    {"meta.commonName": { "$regex": q, "$options": "i" }},
     {"category.name": { "$regex": q, "$options": "i" }},
     {"location.name": { "$regex": q, "$options": "i" }},
     {"location.categoryName": { "$regex": q, "$options": "i" }},
