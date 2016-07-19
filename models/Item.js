@@ -22,8 +22,8 @@ Item.add({
   },
   // meta
   meta: {
-    superThing: { type: String },
-    commonName: { type: String },
+    superThing: { type: String, index: true },
+    commonName: { type: String, index: true },
     brandName: { type: String },
     brandUrl: { type: Types.Url },
     countryOrigin: { type: String }
