@@ -34,6 +34,7 @@ exports = module.exports = function(req, res) {
          "places": { "$addToSet": "$location.name" },
       }
     },
+    { $sort : { "count" : -1 } },
     function(err, items) {
       if (err) throw err;
       // google analytics
