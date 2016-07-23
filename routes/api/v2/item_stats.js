@@ -7,6 +7,7 @@ exports = module.exports = function(req, res) {
   var u = req.query.u || '', // ios deviceId
       t = req.query.t || ''; // ios deviceId
 
+  // individual user stats
   if (u != '' && t === 'profile') {
       Item.model.aggregate(
       {
@@ -25,8 +26,10 @@ exports = module.exports = function(req, res) {
         res.json({items: items});
       });
   }
+  // ranked stats
   else {
     Item.model.aggregate(
+    { $match: { "source.deviceId" : { $ne: null }} },
     {
       $group : { // "$addToSet" pushes only unique values
          _id : "$source.deviceId",
