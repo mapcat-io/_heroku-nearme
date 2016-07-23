@@ -31,7 +31,6 @@ exports = module.exports = function(req, res) {
          "images": { "$addToSet": "$primaryImage" },
          "locations": { "$addToSet": "$location" },
          "count": { "$sum": 1 }
-        //  "details": { $push: "$$ROOT" } // use to return back all individual objects
       }
     },function(err, items) {
       if (err) throw err;

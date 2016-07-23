@@ -29,6 +29,7 @@ keystone.pre('render', middleware.flashMessages);
 // Import Route Controllers
 var routes = {
 	views: importRoutes('./views'),
+	api_v2: importRoutes('./api/v2'),
 	api_prototype: importRoutes('./api/prototype'),
 	api_v1: importRoutes('./api/v1'),
 	site: importRoutes('./site'),
@@ -53,17 +54,26 @@ exports = module.exports = function(app) {
 	app.get('/tool/places', routes.login.places);
 	app.all('/tool/place/:id', routes.login.place_item_list);
 
-	//= iOS webviews
-	app.all('/ios/place/:id', routes.ios.ios_item_list);
+	//= V2
+	app.get('/api/v2/items', routes.api_v2.items); // ios app retrieves from here
+	app.get('/api/v2/item-stats', routes.api_v2.item_stats);
+	app.all('/api/v2/post-items', keystone.middleware.api, keystone.middleware.cors, routes.api_v2.post_items); // ios app posts to here
+	app.get('/api/v2/places', routes.api_v2.places);
+	app.all('/api/v2/top-things', keystone.middleware.api, routes.api_v2.top_things);
 
-	// API PROTOTYPE
+	//= API PROTOTYPE (DEPRECATED)
 	app.get('/api/prototype/things', routes.api_prototype.things); // old url
 	app.get('/api/prototype/items', routes.api_prototype.items); // ios app retrieves from here
+	app.get('/api/prototype/item-stats', routes.api_prototype.item_stats);
 	app.all('/api/prototype/post-items', keystone.middleware.api, keystone.middleware.cors, routes.api_prototype.post_items); // ios app posts to here
 	app.get('/api/prototype/places', routes.api_prototype.places);
 	app.all('/api/prototype/top-things', keystone.middleware.api, routes.api_prototype.top_things);
 
-	// API V1
+	//= iOS webviews (DEPRECATED)
+	app.all('/ios/place/:id', routes.ios.ios_item_list);
+
+
+	//= API V1 (DEPRECATED)
 	app.get('/api/v1', routes.api_v1.index);
 	app.get('/api/v1/things', routes.api_v1.things);
 	app.get('/api/v1/thing/:id', routes.api_v1.thing);
