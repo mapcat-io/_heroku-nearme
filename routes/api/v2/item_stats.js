@@ -5,10 +5,9 @@ var keystone = require('keystone'),
 exports = module.exports = function(req, res) {
 
   var u = req.query.u || '', // ios deviceId
-      t = req.query.t || ''
+      t = req.query.t || ''; // ios deviceId
 
-
-  if (t == 'profile') {
+  if (u != '' && t === 'profile') {
       Item.model.aggregate(
       {
         $group : { // "$addToSet" pushes only unique values
@@ -17,6 +16,7 @@ exports = module.exports = function(req, res) {
            "places": { "$addToSet": "$location.name" },
         }
       },
+      { $match : { "_id" : u } },
       function(err, items) {
         if (err) throw err;
         // google analytics
