@@ -29,7 +29,11 @@ exports = module.exports = function(req, res) {
   // ranked stats
   else {
     Item.model.aggregate(
-    { $match: { "source.deviceId" : { $ne: null, $ne: "" }} },
+    { $match: { $and: [
+      { "source.deviceId" : { $ne: null }},
+      { "source.deviceId" : { $ne: "" }}
+    ]}},
+    // { $match: { "source.deviceId" : { $ne: null }} },
     {
       $group : { // "$addToSet" pushes only unique values
          _id : "$source.deviceId",
