@@ -5,7 +5,8 @@ var Item = new keystone.List('Item', {
     autokey: { path: 'mapcatId', from: '_id', fixed: true },
     map: { name: 'name' },
     track: true,
-    defaultSort: '-createdAt'
+    defaultSort: '-createdAt',
+    searchFields: 'name, location.name'
 });
 
 Item.add({
