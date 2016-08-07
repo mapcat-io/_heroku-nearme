@@ -23,6 +23,16 @@ exports = module.exports = function(req, res) {
        "totalThings": { "$sum": "things" }
     }
   },
+  // Unwind it again
+  {"$unwind": "$things"},
+  // Sort how you want to
+  {"$sort": { "things": 1} },
+  // Use $push for a regular array
+  { "$group": {
+      _id : {"name": "$location.name", "street": "$location.street" },
+      "things": {"$push": "$things" }
+    }
+  },
   function(err, items) {
     if (err) throw err;
     // google analytics
