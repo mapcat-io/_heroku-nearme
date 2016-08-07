@@ -56,7 +56,10 @@ exports = module.exports = function(app) {
 
 	//= V2
 	app.get('/api/v2/items', routes.api_v2.items); // ios app retrieves from here
+	app.get('/api/v2/items-in-place', routes.api_v2.items_in_place); // ios app retrieves from here
+	app.get('/api/v2/item', routes.api_v2.item);
 	app.get('/api/v2/item-stats', routes.api_v2.item_stats);
+	app.get('/api/v2/place-stats', routes.api_v2.place_stats);
 	app.all('/api/v2/post-items', keystone.middleware.api, keystone.middleware.cors, routes.api_v2.post_items); // ios app posts to here
 	app.get('/api/v2/places', routes.api_v2.places);
 	app.all('/api/v2/top-things', keystone.middleware.api, routes.api_v2.top_things);
