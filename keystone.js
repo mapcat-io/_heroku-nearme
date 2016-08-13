@@ -2,6 +2,9 @@
 // customising the .env file in your project's root folder.
 require('dotenv').load();
 
+// new relic monitoring. See ./newrelic.js for more info.
+require('newrelic');
+
 // Require keystone
 var keystone = require('keystone');
 var handlebars = require('express-handlebars');
