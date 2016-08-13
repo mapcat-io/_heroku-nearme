@@ -34,13 +34,27 @@ exports = module.exports = function(req, res) {
          "locations": { "$addToSet": "$location" },
          "count": { "$sum": 1 },
          "totalThings": { "$sum": "things" }
-        //  "details": { $push: "$$ROOT" } // use to return back all individual objects
       }
     },
     function(err, items) {
       if (err) throw err;
       // google analytics
       utilities.analyticsEventAPI('api', 'search', req, 1, u);
+      // all the items
+      res.json({items: items});
+    });
+
+  }
+  if (t === 'test') {
+    Item.model.aggregate(
+    { $match: { $or:
+      // fields to check for the search
+      {"name": { "$regex": q, "$options": "i" }},
+    }},
+    function(err, items) {
+      if (err) throw err;
+      // google analytics
+      console.log();
       // all the items
       res.json({items: items});
     });
