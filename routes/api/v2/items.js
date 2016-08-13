@@ -47,10 +47,7 @@ exports = module.exports = function(req, res) {
   }
   if (t === 'test') {
     Item.model.aggregate(
-    { $match: { $or:
-      // fields to check for the search
-      {"name": { "$regex": q, "$options": "i" }},
-    }},
+      { $match: { $or: [{"name": { "$regex": q, "$options": "i" }}]}},
     function(err, items) {
       if (err) throw err;
       // google analytics

@@ -12,7 +12,7 @@ var Item = new keystone.List('Item', {
 Item.add({
   state: { type: Types.Select, options: 'draft, published, archived', default: 'published' },
   name: { type: String, required: true, index: true },
-  description: { type: Types.Textarea, index: true },
+  description: { type: Types.Textarea },
   primaryImage: { type: Types.S3File, path: 'heroku-nearme', filename: function(item, filename){ return item._id + '-' + filename; }, allowedTypes: ['image/gif', 'image/jpeg', 'image/png'] },
   csvId: { type: String },
   source: {
