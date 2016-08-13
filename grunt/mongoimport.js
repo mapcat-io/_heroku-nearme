@@ -1,5 +1,6 @@
 // attempts to replicate the command:
-// mongoimport -h ds029224.mlab.com:29224 -d heroku_qtmrm6hs -c things_prototype -u rustyritz -p J3nnifer --file mapcat_test.csv --type csv --headerline
+// mongoimport -h ds149175-a0.mlab.com:49175 -d heroku_0dg6nvlh -c items -u heroku_prod -p k4T2tFOci9 --upsert --upsertFields ['csvId'] --file public/data/master/items/csv-food-services-yelp-master-01.csv --type csv --headerline --batchSize 100 --numInsertionWorkers 500
+
 
 module.exports = {
   options: {
@@ -21,24 +22,6 @@ module.exports = {
         drop : false,
         headerLine: true
       },
-      // {
-      //   name : 'items',
-      //   type : 'csv',
-      //   file : 'public/data/master/items/csv-itemsprototype-master.csv',
-      //   upsert : true,
-      //   upsertFields: ['csvId'],
-      //   drop : false,
-      //   headerLine: true
-      // },
-      // {
-      //   name : 'items',
-      //   type : 'csv',
-      //   file : 'public/data/master/items/csv-parks-master.csv',
-      //   upsert : true,
-      //   upsertFields: ['csvId'],
-      //   drop : false,
-      //   headerLine: true
-      // },
     ]
   }
 };
