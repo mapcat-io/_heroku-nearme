@@ -56,6 +56,7 @@ exports = module.exports = function(app) {
 
 	//= V2
 	app.get('/api/v2/items', routes.api_v2.items); // ios app retrieves from here
+	app.get('/api/v2/geoitems', routes.api_v2.geoitems); // new proposed query (for performance)
 	app.get('/api/v2/items-in-place', routes.api_v2.items_in_place); // ios app retrieves from here
 	app.get('/api/v2/item', routes.api_v2.item);
 	app.get('/api/v2/item-stats', routes.api_v2.item_stats);
