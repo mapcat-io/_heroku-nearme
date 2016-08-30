@@ -2,7 +2,7 @@
 
 Mapcat Company Site Node.js deployment. 
 
-Live site: [www.mapcat.io](https:/www.mapcat.io/)
+Live site: [www.mapcat.io](http://www.mapcat.io/)
 
 ## Relevant Documentation Pages
 
