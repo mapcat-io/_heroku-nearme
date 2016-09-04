@@ -1,6 +1,7 @@
 var keystone = require('keystone'),
     async = require('async'),
 		Item = keystone.list('Item'),
+		utilities = require('../../utilities'),
     TopThings = keystone.list('TopThings');
 
 // populates csv dump into 'test' collection
@@ -76,11 +77,19 @@ exports = module.exports = function(req, res) {
 
   }
   else {
-    TopThings.model.find({}, function(err, items) {
-      if (err) throw err;
+      
+   TopThings.paginate({
+        page: req.query.page || 1,
+        perPage: 10,
+        maxPages: 10
+    }).exec(function(err, items) {
+        if (err) throw err;
+      // google analytics
+      utilities.analyticsEventAPI('api', 'top-things', req, 1, u);
       // all the items
       res.json({items: items});
     });
+    
   }
 
-}
+};

@@ -31,7 +31,7 @@ exports = module.exports = function(req, res) {
 
   // Load Place
   view.on('init', function (next) {
-    var q = PlacePrototype.model.findById(req.params.id)
+    var q = PlacePrototype.model.findById(req.params.id);
 
     q.exec(function (err, result) {
       locals.place = result;
@@ -39,9 +39,14 @@ exports = module.exports = function(req, res) {
     });
   });
 
+
   // Load Top Things Prototype
   view.on('init', function (next) {
-    var q = TopThings.model.find({})
+    var q = TopThings.paginate({
+        page: req.query.page || 1,
+        perPage: 10,
+        maxPages: 10
+    });
     q.exec(function (err, result) {
       locals.topthings = result;
       next(err);
@@ -50,7 +55,7 @@ exports = module.exports = function(req, res) {
   });
 
 	// Render the view
-	view.render('ios-item-list', {
+view.render('ios-item-list', {
   layout: 'ios',
   source: 'webView',
   address: address,

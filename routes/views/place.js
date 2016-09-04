@@ -9,4 +9,4 @@ exports = module.exports = function(req, res) {
       if (err) throw err;
       res.render('place', {layout: 'main', title: place.title, user: req.user, place: place});
     }).populate('category');
-}
+};

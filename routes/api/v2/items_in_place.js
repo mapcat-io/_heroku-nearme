@@ -1,6 +1,9 @@
 var keystone = require('keystone'),
     Item = keystone.list('Item'),
-    utilities = require('../../utilities');
+    utilities = require('../../utilities'),
+    logger = require("../../../utils/logger"),
+    aggregate_paginator = require("../../../utils/aggregate_paginate");
+
 
 exports = module.exports = function(req, res) {
   var q = req.query.q || '', // search term (place)
@@ -13,7 +16,7 @@ exports = module.exports = function(req, res) {
     {"location.name": q},
   ];
   // aggregate results
-  Item.model.aggregate(
+  var aggregateQuery = Item.model.aggregate(
   { $match: { $or: query}},
   {
     $group : { // "$addToSet" pushes only unique values
@@ -32,13 +35,27 @@ exports = module.exports = function(req, res) {
       _id : {"name": "$location.name", "street": "$location.street" },
       "things": {"$push": "$things" }
     }
-  },
-  function(err, items) {
-    if (err) throw err;
-    // google analytics
-    utilities.analyticsEventAPI('api', 'items-in-place', req, 1, u);
-    // all the items
-    res.json({items: items});
   });
+  
+  
+    var queryOptions = {
+        page : req.query.page || 1,
+        limit : 10
+    };
 
-}
+    aggregate_paginator(Item.model, aggregateQuery, queryOptions, function(err, items, pageCount, count) {
+        if (err) {
+            logger.error(err);
+        } else {
+            logger.debug("pageCount: " + pageCount + " count: " + count);
+            //logger.debug("agreegate items " + items);
+            // google analytics
+            utilities.analyticsEventAPI('api', 'items-in-place', req, 1, u);
+            res.json({
+                items : items
+            });
+        }
+    });
+
+
+};
