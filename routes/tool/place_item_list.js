@@ -29,7 +29,7 @@ exports = module.exports = function(req, res) {
 
   // Load Place
   view.on('init', function (next) {
-    var q = PlacePrototype.model.findById(req.params.id)
+    var q = PlacePrototype.model.findById(req.params.id);
 
     q.exec(function (err, result) {
       locals.place = result;
@@ -39,7 +39,7 @@ exports = module.exports = function(req, res) {
 
   // Load Top Things Prototype
   view.on('init', function (next) {
-    var q = TopThingsPrototype.model.find({}).sort({ 'name' : 1})
+    var q = TopThingsPrototype.model.find({}).sort({ 'name' : 1});
     q.exec(function (err, result) {
       locals.topthings = result;
       next(err);

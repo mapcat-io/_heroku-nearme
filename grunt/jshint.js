@@ -9,4 +9,4 @@ module.exports = {
 	server: [
 		'./keystone.js'
 	]
-}
+};

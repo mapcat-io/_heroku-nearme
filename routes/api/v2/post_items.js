@@ -36,8 +36,8 @@ exports = module.exports = function(req, res) {
     };
 
     for (var itemName in data["items"]) {
-      obj["name"] = data["items"][itemName]
-      var item = new Item.model(obj)
+      obj["name"] = data["items"][itemName];
+      var item = new Item.model(obj);
       item.save(function(err) {
           if (err) return res.apiError('error', err);
       });
@@ -54,4 +54,4 @@ exports = module.exports = function(req, res) {
       res.json({post: 'items may only be posted from this endpoint.'});
   }
 
-}
+};
