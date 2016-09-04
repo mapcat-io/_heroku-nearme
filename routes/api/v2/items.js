@@ -27,6 +27,8 @@ exports = module.exports = function(req, res) {
   ];
   
   
+  logger.debug("q: " + q + " query: " + query);
+  
   // latest aggregated results
   if (t === 'aggregate') {
       
