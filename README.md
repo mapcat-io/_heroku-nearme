@@ -1,4 +1,4 @@
-# Mapact Primary Web Application
+# Mapcat Primary Web Application
 
 Mapcat Company Site Node.js deployment. 
 
