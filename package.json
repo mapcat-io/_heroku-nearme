@@ -50,7 +50,9 @@
     "unicode": "*",
     "winston": "*",
     "nodemon": "*",
-    "embedly": "*"
+    "embedly": "*",
+    "cache-manager" :"*",
+    "cache-manager-redis" :"*"
   },
   "engines": {
     "node": ">=0.10.22",

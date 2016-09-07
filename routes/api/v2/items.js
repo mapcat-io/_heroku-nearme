@@ -2,6 +2,7 @@ var keystone = require('keystone'),
     Item = keystone.list('Item'),
     utilities = require('../../utilities'),
     logger = require("../../../utils/logger"),
+    cache = require("../../../utils/cache"),
     aggregate_paginator = require("../../../utils/aggregate_paginate");
 
 
@@ -26,8 +27,8 @@ exports = module.exports = function(req, res) {
     {"location.categoryName": { "$regex": q, "$options": "i" }},
   ];
   
-  
-  logger.debug("q: " + q + " query: " + query);
+    var cache_key = "q:" + q +"u:"+ u +"t:"+t+"lat:"+lat+ "long:"+long + "page:" +page;
+  logger.debug("q: " + q + " query: " + query + "cache_key:" + cache_key);
   
   // latest aggregated results
   if (t === 'aggregate') {
@@ -46,9 +47,11 @@ exports = module.exports = function(req, res) {
       }
     });
     
+   var ttl = 600;
     var queryOptions = { page : req.query.page || 1, limit : 10};
-    
-    aggregate_paginator(Item.model, aggregateQuery, queryOptions, function(err, items, pageCount, count) {
+    cache.wrap(cache_key, function(cacheCallback) {
+         aggregate_paginator(Item.model, aggregateQuery, queryOptions,cacheCallback ); 
+    }, {ttl: ttl}, function(err, items, pageCount, count) {
         if (err) {
             logger.error(err);
         } else {
@@ -57,7 +60,9 @@ exports = module.exports = function(req, res) {
             utilities.analyticsEventAPI('api', 'search', req, 1, u);
             res.json({items: items});
         }
-    }); 
+    });
+    
+   
 
   }else if (t === 'test') {
       logger.debug(" test agreegate ");
@@ -65,7 +70,11 @@ exports = module.exports = function(req, res) {
       { $match: { $or: [{"name": { "$regex": q, "$options": "i" }}]}});
        var queryOptions = { page : req.query.page || 1, limit : 10};
        
-       aggregate_paginator(Item.model, aggregateQuery, queryOptions, function(err, items, pageCount, count) {
+       
+       var queryOptions = { page : req.query.page || 1, limit : 10};
+    cache.wrap(cache_key, function(cacheCallback) {
+         aggregate_paginator(Item.model, aggregateQuery, queryOptions,cacheCallback ); 
+    }, {ttl: ttl},function(err, items, pageCount, count) {
         if (err) {
             logger.error(err);
         } else {
@@ -73,7 +82,11 @@ exports = module.exports = function(req, res) {
             logger.debug("agreegate items " + items);
             res.json({items: items});
         }
-    }); 
+    });
+    
+    
+       
+      
        
   } else {
 
