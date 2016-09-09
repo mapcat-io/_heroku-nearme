@@ -45,7 +45,7 @@ exports = module.exports = function(req, res) {
     });
 
   }
-  if (t === 'test') {
+  else if (t === 'test') {
     Item.model.aggregate(
       { $match: { $or: [{"name": { "$regex": q, "$options": "i" }}]}},
     function(err, items) {
