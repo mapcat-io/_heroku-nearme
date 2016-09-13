@@ -1,11 +1,16 @@
 var keystone = require('keystone'),
-    GeoItem = keystone.list('GeoItem');
+    GeoItem = keystone.list('GeoItem'),
+    logger = require("../../../utils/logger"),
+    cache = require("../../../utils/cache"),
+    aggregate_paginator = require("../../../utils/aggregate_paginate");
+
 
 exports = module.exports = function(req, res) {
   var q = req.query.q || '', // search term
       u = req.query.u || '', // ios deviceId
       lat = req.query.lat || '',
-      long =  req.query.long || '';
+      long =  req.query.long || '',
+      page =  req.query.page || '';
 
   //= Set up
   var maxDistance = 1609.34; // distance to use for near query in meters
@@ -16,6 +21,11 @@ exports = module.exports = function(req, res) {
   q = q.trim();
   // regex to match any string that starts with q
   q = '\\b' + q + '\\S*';
+  
+    var cache_key = "q:" + q +"u:"+ u +"lat:"+lat+ "long:"+long + "page:" +page;
+  logger.debug("q: " + q + " query: " + query + "cache_key:" + cache_key);
+  
+  
   // fields to query
   var query = [
     // fields to check for the search
@@ -25,9 +35,9 @@ exports = module.exports = function(req, res) {
     {"location.name": { "$regex": q, "$options": "i" }},
     {"location.categoryName": { "$regex": q, "$options": "i" }},
   ];
-
+    
   // perform
-  GeoItem.model.aggregate(
+  var aggregateQuery = GeoItem.model.aggregate(
   {
     $geoNear: {
        near: { type: "Point", coordinates: [ long , lat ] },
@@ -48,11 +58,20 @@ exports = module.exports = function(req, res) {
 
     }
   },
-  { "$sort" : { "distance": 1 }},
-  function(err, items) {
-    if (err) throw err;
-    // all the items
-    res.json({items: items});
-  });
+  { "$sort" : { "distance": 1 }});
+  
+  var ttl = 600;
+  var queryOptions = { page : req.query.page || 1, limit : 10};
+  
+  cache.wrap(cache_key, function(cacheCallback) {
+         aggregate_paginator(GeoItem.model, aggregateQuery, queryOptions,cacheCallback ); 
+    }, {ttl: ttl}, function(err, items, pageCount, count) {
+        if (err) {
+            logger.error(err);
+        } else {
+            logger.debug("pageCount: " + pageCount + " count: " + count);
+            res.json({items: items});
+        }
+    });
 
 };
