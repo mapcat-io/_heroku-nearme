@@ -53,7 +53,6 @@ exports = module.exports = function(req, res) {
         "location": { "$addToSet": "$distance" },
         "distance": { "$addToSet": "$distance" },
         "location": { "$first": "$location" },
-
       }
     },
     { "$sort" : { "distance": 1 }}
