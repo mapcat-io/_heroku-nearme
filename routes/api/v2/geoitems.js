@@ -59,7 +59,7 @@ exports = module.exports = function(req, res) {
   );
 
   var ttl = 600;
-  var queryOptions = { page : req.query.page || 1, limit : 100};
+  var queryOptions = { page : req.query.page || 1, limit : 1000};
 
   cache.wrap(cache_key, function(cacheCallback) {
       aggregate_paginator(GeoItem.model, aggregateQuery, queryOptions, cacheCallback );
