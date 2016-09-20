@@ -12,7 +12,7 @@ function aggregate_paginate (model,aggregate, options, callback) {
   var skipDocuments = (pageNumber - 1) * resultsPerPage;
   var sortBy = options.sortBy;
   var isCount = parseInt(options.iscount || 0);
-  
+
   var q = model.aggregate(aggregate._pipeline);
   var countQuery = model.aggregate(q._pipeline);
 
