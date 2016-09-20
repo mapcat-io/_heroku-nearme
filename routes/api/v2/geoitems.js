@@ -42,7 +42,7 @@ exports = module.exports = function(req, res) {
          distanceField: "distance",
          maxDistance: maxDistance,
          query: { $or: query},
-         limit: 100,
+         limit: 1000,
          spherical: true,
       }
     },
