@@ -59,6 +59,7 @@ exports = module.exports = function(req, res) {
     { "$sort" : { "distance": 1 }}
   );
 
+  var ttl = 600;
   var queryOptions = { page : req.query.page || 1, limit : 100};
 
   cache.wrap(cache_key, function(cacheCallback) {
