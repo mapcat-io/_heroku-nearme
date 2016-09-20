@@ -12,7 +12,7 @@ exports = module.exports = function(req, res) {
       page =  req.query.page || '';
 
   //= Set up
-  var maxDistance = 1609.34 * 2; // distance to use for near query in meters
+  var maxDistance = 1609.34; // distance to use for near query in meters
   // round to two decimal points
   long = Math.round(long * 1000) / 1000;
   lat = Math.round(lat * 1000) / 1000;
