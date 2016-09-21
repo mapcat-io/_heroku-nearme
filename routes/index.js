@@ -40,6 +40,9 @@ exports = module.exports = function(app) {
   app.get('/', routes.site.index);
   app.get('/login', routes.views.index);
   app.get('/merchants', routes.site.merchants);
+  app.get('/terms', routes.site.terms);
+  app.get('/privacy', routes.site.privacy);
+  app.get('/faq', routes.site.faq);
 
   //= V2
   app.get('/api/v2/items', routes.api_v2.items); // ios prod app retrieves from here
