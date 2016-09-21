@@ -11,7 +11,7 @@ var GeoItem = new keystone.List('GeoItem', {
 
 GeoItem.add({
   state: { type: Types.Select, options: 'draft, published, archived', default: 'published' },
-  name: { type: String, required: true, index: true },
+  name: { type: String, required: true },
   description: { type: Types.Textarea },
   primaryImage: { type: Types.S3File, path: 'heroku-nearme', filename: function(item, filename){ return item._id + '-' + filename; }, allowedTypes: ['image/gif', 'image/jpeg', 'image/png'] },
   csvId: { type: String },
@@ -23,15 +23,15 @@ GeoItem.add({
   },
   // meta
   meta: {
-    superThing: { type: String, index: true },
-    commonName: { type: String, index: true },
+    superThing: { type: String },
+    commonName: { type: String },
     brandName: { type: String },
     brandUrl: { type: Types.Url },
     countryOrigin: { type: String }
   },
   // item category
   category: {
-    name: { type: String, index: true },
+    name: { type: String },
     googleProduct: { type: String }
   },
   // item tags
@@ -42,7 +42,7 @@ GeoItem.add({
     coordinates: { type: Types.NumberArray } // format: [ long, lat ]
   },
   location: {
-    name: { type: String, index: true },
+    name: { type: String },
     lat: { type: Types.Number },
     long: { type: Types.Number },
     street: { type: String },
@@ -54,7 +54,7 @@ GeoItem.add({
     hours: { type: String },
     phone: { type: String },
     // location category
-    categoryName: { type: String, index: true },
+    categoryName: { type: String },
     categoryYelp: { type: String },
     // ids
     foursquareId: { type: String },
