@@ -62,13 +62,11 @@ exports = module.exports = function(req, res) {
 
     });
 
-
-
   } else if (t === 'test') {
       logger.debug(" test agreegate ");
          var aggregateQuery =  Item.model.aggregate(
       { $match: { $or: [{"name": { "$regex": q, "$options": "i" }}]}});
-       var queryOptions = { page : req.query.page || 1, limit : 10};
+       var queryOptions = { page : req.query.page || 1, limit : 1000};
     cache.wrap(cache_key, function(cacheCallback) {
          aggregate_paginator(Item.model, aggregateQuery, queryOptions,cacheCallback );
     }, {ttl: ttl},function(err, items, pageCount, count) {

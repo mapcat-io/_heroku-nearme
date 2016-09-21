@@ -10,8 +10,8 @@ exports = module.exports = function(req, res) {
   //= Set up
   var maxDistance = 1609.34; // distance to use for near query in meters
   // round to two decimal points
-  long = Math.round(long * 1000) / 1000
-  lat = Math.round(lat * 1000) / 1000
+  long = Math.round(long * 100) / 100
+  lat = Math.round(lat * 100) / 100
   // process query
   q = q.trim()
   // regex to match any string that starts with q
