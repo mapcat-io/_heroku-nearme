@@ -6,7 +6,9 @@ var Item = new keystone.List('Item', {
     map: { name: 'name' },
     track: true,
     defaultSort: '-createdAt',
-    searchFields: 'name, location.name'
+    searchFields: 'name, location.name',
+    autoIndexId: true,
+    
 });
 
 Item.add({
@@ -72,5 +74,6 @@ Item.add({
   }
 });
 
-Item.defaultColumns = 'name, location.name, csvId, mapcatId, state'
+Item.defaultColumns = 'name, location.name, csvId, mapcatId, state';
+
 Item.register();

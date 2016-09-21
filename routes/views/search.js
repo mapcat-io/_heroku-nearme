@@ -12,4 +12,4 @@ exports = module.exports = function(req, res) {
       // all the things
       res.render('search', {layout: 'main', title: "Things", user: req.user , q: q, things: things});
     }).populate('category superThing place');
-}
+};

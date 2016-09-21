@@ -9,4 +9,4 @@ exports = module.exports = function(req, res) {
       if (err) throw err;
       res.render('thing', {layout: 'main', title: thing.title, user: req.user, thing: thing});
     }).populate('superThing place');
-}
+};
