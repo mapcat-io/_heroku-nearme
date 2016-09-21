@@ -1,5 +1,5 @@
 var keystone = require('keystone'),
-    GeoItem = keystone.list('GeoItem'),
+    Item = keystone.list('Item'),
     logger = require("../../../utils/logger"),
     cache = require("../../../utils/cache"),
     aggregate_paginator = require("../../../utils/aggregate_paginate");
@@ -31,11 +31,10 @@ exports = module.exports = function(req, res) {
     {"meta.superThing": { "$regex": q, "$options": "i" }},
     {"category.name": { "$regex": q, "$options": "i" }},
     {"location.name": { "$regex": q, "$options": "i" }},
-    {"location.categoryName": { "$regex": q, "$options": "i" }},
   ];
 
   // perform
-  var aggregateQuery = GeoItem.model.aggregate(
+  var aggregateQuery = Item.model.aggregate(
     {
       $geoNear: {
          near: { type: "Point", coordinates: [ long , lat ] },
@@ -62,7 +61,7 @@ exports = module.exports = function(req, res) {
   var queryOptions = { page : req.query.page || 1, limit : 1000};
 
   cache.wrap(cache_key, function(cacheCallback) {
-      aggregate_paginator(GeoItem.model, aggregateQuery, queryOptions, cacheCallback );
+      aggregate_paginator(Item.model, aggregateQuery, queryOptions, cacheCallback );
     }, {ttl: ttl}, function(err, items, pageCount, count) {
         if (err) {
             logger.error(err);

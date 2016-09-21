@@ -6,9 +6,7 @@ var Item = new keystone.List('Item', {
     map: { name: 'name' },
     track: true,
     defaultSort: '-createdAt',
-    searchFields: 'name, location.name',
-    autoIndexId: true,
-    
+    searchFields: 'name, location.name'
 });
 
 Item.add({
@@ -39,6 +37,10 @@ Item.add({
   // item tags
   tags: { type: String, note: 'comma separated list' },
   // location
+  loc: { // 2dsphere format
+    type: { type: String, default: "Point" },
+    coordinates: { type: Types.NumberArray } // format: [ long, lat ]
+  },
   location: {
     name: { type: String },
     lat: { type: Types.Number },
@@ -65,6 +67,8 @@ Item.add({
     foursquareUrl: { type: Types.Url },
     facebookUrl: { type: Types.Url },
     instagramUrl: { type: Types.Url },
+    postmatesUrl: { type: Types.Url },
+    postmatesImageUrl: { type: Types.Url },
     googleStreetViewUrl: { type: Types.Url },
     googleSeeInsideUrl: { type: Types.Url },
     zomatoUrl: { type: Types.Url },
@@ -74,6 +78,5 @@ Item.add({
   }
 });
 
-Item.defaultColumns = 'name, location.name, csvId, mapcatId, state';
-
+Item.defaultColumns = 'name, location.name, csvId, mapcatId, state'
 Item.register();

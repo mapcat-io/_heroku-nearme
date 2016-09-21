@@ -5,8 +5,10 @@
   "dependencies": {
     "async": "^0.9.0",
     "bson": "^0.4.12",
+    "cake": "*",
     "cloudinary": "^1.0.12",
     "dotenv": "^1.1.0",
+    "embedly": "*",
     "express-handlebars": "^1.1.0",
     "foursquarevenues": "^2.0.0",
     "grunt-execute": "^0.2.2",
@@ -20,17 +22,16 @@
     "newrelic": "^1.29.0",
     "node-sass": "^3.3.3",
     "node-sass-middleware": "^0.9.6",
-    "underscore": "^1.8.0",
-    "universal-analytics": "^0.3.11",
-    "yelp": "^1.0.1",
-    "cake": "*",
-    "unicode": "*",
-    "winston": "*",
     "nodemon": "*",
-    "embedly": "*"
+    "redis": "^2.6.2",
+    "underscore": "^1.8.0",
+    "unicode": "*",
+    "universal-analytics": "^0.3.11",
+    "winston": "*",
+    "yelp": "^1.0.1"
   },
   "devDependencies": {
-  	"async": "^0.9.0",
+    "async": "^0.9.0",
     "bson": "^0.4.12",
     "grunt": "^0.4.4",
     "grunt-concurrent": "^0.5.0",
@@ -51,8 +52,8 @@
     "winston": "*",
     "nodemon": "*",
     "embedly": "*",
-    "cache-manager" :"*",
-    "cache-manager-redis" :"*"
+    "cache-manager": "*",
+    "cache-manager-redis": "*"
   },
   "engines": {
     "node": ">=0.10.22",

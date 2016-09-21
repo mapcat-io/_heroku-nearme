@@ -24,7 +24,6 @@ exports = module.exports = function(req, res) {
     {"meta.commonName": { "$regex": q, "$options": "i" }},
     {"category.name": { "$regex": q, "$options": "i" }},
     {"location.name": { "$regex": q, "$options": "i" }},
-    {"location.categoryName": { "$regex": q, "$options": "i" }},
   ];
 
     var cache_key = "q:" + q +"u:"+ u +"t:"+t+"lat:"+lat+ "long:"+long + "page:" +page;
@@ -47,7 +46,7 @@ exports = module.exports = function(req, res) {
       }
     });
 
-   var ttl = 600;
+    var ttl = 600;
     var queryOptions = { page : req.query.page || 1, limit : 10};
     cache.wrap(cache_key, function(cacheCallback) {
          aggregate_paginator(Item.model, aggregateQuery, queryOptions,cacheCallback );
@@ -65,13 +64,10 @@ exports = module.exports = function(req, res) {
 
 
 
-  }else if (t === 'test') {
+  } else if (t === 'test') {
       logger.debug(" test agreegate ");
          var aggregateQuery =  Item.model.aggregate(
       { $match: { $or: [{"name": { "$regex": q, "$options": "i" }}]}});
-       var queryOptions = { page : req.query.page || 1, limit : 10};
-
-
        var queryOptions = { page : req.query.page || 1, limit : 10};
     cache.wrap(cache_key, function(cacheCallback) {
          aggregate_paginator(Item.model, aggregateQuery, queryOptions,cacheCallback );

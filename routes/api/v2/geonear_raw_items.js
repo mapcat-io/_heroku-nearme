@@ -1,5 +1,5 @@
 var keystone = require('keystone'),
-    NewGeoItem = keystone.list('NewGeoItem');
+    Item = keystone.list('Item');
 
 exports = module.exports = function(req, res) {
   var q = req.query.q || '', // search term
@@ -23,11 +23,10 @@ exports = module.exports = function(req, res) {
     {"meta.superThing": { "$regex": q, "$options": "i" }},
     {"category.name": { "$regex": q, "$options": "i" }},
     {"location.name": { "$regex": q, "$options": "i" }},
-    {"location.categoryName": { "$regex": q, "$options": "i" }},
   ];
 
   // perform
-  NewGeoItem.model.aggregate(
+  Item.model.aggregate(
   {
     $geoNear: {
        near: { type: "Point", coordinates: [ long , lat ] },

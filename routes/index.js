@@ -51,9 +51,10 @@ exports = module.exports = function(app) {
 	app.all('/tool/place/:id', routes.login.place_item_list);
 
 	//= V2
-	app.get('/api/v2/items', routes.api_v2.items); // ios app retrieves from here
-	app.get('/api/v2/geoitems', routes.api_v2.geoitems); // new proposed query (for performance)
-  app.get('/api/v2/newgeoitems', routes.api_v2.newgeoitems); // new proposed query (for performance)
+	app.get('/api/v2/items', routes.api_v2.items); // ios prod app retrieves from here
+	app.get('/api/v2/geonear-items', routes.api_v2.geonear_items); // geonear query
+  app.get('/api/v2/geonear-raw-items', routes.api_v2.geonear_raw_items); // geonear query without pagination
+
 	app.get('/api/v2/items-in-place', routes.api_v2.items_in_place); // ios app retrieves from here
 	app.get('/api/v2/item', routes.api_v2.item);
 	app.get('/api/v2/item-stats', routes.api_v2.item_stats);
